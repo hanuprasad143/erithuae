@@ -11,17 +11,16 @@ export default function UniversityHistoryPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo title="History" subtitle="History" />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* campus choose area start */}
-      <CampusChooseAreaFour/>
+      <CampusChooseAreaFour />
       {/* campus choose area end */}
 
       {/* history area start */}
-      <HistoryArea/>
+      <HistoryArea />
       {/* history area end */}
-
     </main>
   );
 }

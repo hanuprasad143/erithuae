@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { IBookDT } from "@/types/book-d-t";
-import { getTagClass } from "./shop-item";
+// import { getTagClass } from "./shop-item";
 import { formatPrice } from "@/lib/format-price";
 
 type IProps = {
@@ -13,13 +13,15 @@ export default function ShopListItem({ item }: IProps) {
     <div className="tp-shop-list-product-item d-flex mb-10">
       <div className="tp-shop-list-product-thumb p-relative">
         <Link href={`/shop-details/${item.id}`}>
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={148}
-            height={220}
-            style={{ height: "auto" }}
-          />
+          {item.image && (
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={148}
+              height={220}
+              style={{ height: "auto" }}
+            />
+          )}
         </Link>
       </div>
       <div className="tp-shop-list-product-content p-relative">
@@ -34,7 +36,7 @@ export default function ShopListItem({ item }: IProps) {
         </h4>
         <p>{item.short_desc}</p>
         <div className="tp-shop-product-price">
-          <span>{formatPrice(item.price, true)}</span>
+          <span>{formatPrice(item.price ?? 0, true)}</span>
         </div>
         <div className="tp-shop-list-product-btn">
           <button>Add to cart</button>

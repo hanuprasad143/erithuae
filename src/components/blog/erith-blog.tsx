@@ -7,10 +7,7 @@ import { BlogQuoteItemOne, BlogQuoteItemTwo } from "./single/blog-quote-item";
 import BlogStandardItem from "./single/blog-standard-item";
 
 export default function ErithBlogArea() {
-  const { currentItems, handlePageClick, pageCount } = usePagination(
-    blog_standard_data,
-    5,
-  );
+  const { currentItems } = usePagination(blog_standard_data, 5);
   return (
     <section className="tp-blog-standard-area p-relative pt-40 pb-120">
       <div className="container">

@@ -11,11 +11,7 @@ export default function UniversitySchedulePage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Schedule a Tour"
-        subtitle="Schedule a Tour"
-        admission={true}
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* schedule area start */}

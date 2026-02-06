@@ -1,14 +1,14 @@
 import React from "react";
-import InputRange from "@/components/ui/input-range";
-import bookData from "@/data/book-shop-data";
+// import InputRange from "@/components/ui/input-range";
+// import bookData from "@/data/book-shop-data";
 
-const maxPrice = bookData.reduce((max, book) => Math.max(max, book.price), 0);
+// const maxPrice = bookData.reduce((max, book) => Math.max(max, book.price), 0);
 
 export default function PriceFilter() {
-  const [priceValue, setPriceValue] = React.useState<number[]>([0, maxPrice]);
-  function handleChanges(values: number[]) {
-    setPriceValue(values);
-  }
+  // const [priceValue, setPriceValue] = React.useState<number[]>([0, maxPrice]);
+  // function handleChanges(values: number[]) {
+  //   setPriceValue(values);
+  // }
 
   //   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
   //     e.preventDefault();

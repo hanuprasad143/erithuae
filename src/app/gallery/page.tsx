@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
-import ContactArea from "@/components/contact/contact-area";
-import ContactInfoArea from "@/components/contact/contact-info-area";
-import AboutCampus from "@/components/about/about-campus";
+// import ContactArea from "@/components/contact/contact-area";
+// import ContactInfoArea from "@/components/contact/contact-info-area";
+// import AboutCampus from "@/components/about/about-campus";
 import ErithGallery from "@/components/gallery/gallery";
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function ContactPage() {
     <main>
       <BreadcrumbOne
         title="Inspirations"
-        // subtitle="Upcoming News"
+        subtitle="Explore Our Work & Moments"
         color="color"
         pages={true}
       />

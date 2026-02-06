@@ -1,10 +1,10 @@
-import { FaFilePdf } from "react-icons/fa";
-import { MdDescription } from "react-icons/md";
-import { AiFillFilePdf } from "react-icons/ai";
+// import { FaFilePdf } from "react-icons/fa";
+// import { MdDescription } from "react-icons/md";
+// import { AiFillFilePdf } from "react-icons/ai";
 
-import Image from "next/image";
+// import Image from "next/image";
 
-import Link from "next/link";
+// import Link from "next/link";
 
 const shopServices = [
   {

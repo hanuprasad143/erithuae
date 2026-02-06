@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 // import AboutBanner from "@/components/about/banner/about-banner";
-import ResourceBanner from "@/components/resources/resource-banner";
+// import ResourceBanner from "@/components/resources/resource-banner";
 // import TutorArea from "@/components/tutor/tutor-area";
 // import CounterSix from "@/components/counter/counter-six";
 // import MissionArea from "@/components/mission/mission-area";
@@ -25,7 +25,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* <ResourceBanner /> */}
-      <KnowledgeCenterBanner/>
+      <KnowledgeCenterBanner />
     </main>
   );
 }

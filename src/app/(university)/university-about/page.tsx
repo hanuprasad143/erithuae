@@ -15,34 +15,31 @@ export default function UniversityAboutPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="About Us"
-        subtitle="About Us"
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* about area start */}
-      <AboutTwo spacing="pt-90 pb-90"/>
+      <AboutTwo spacing="pt-90 pb-90" />
       {/* about area end */}
 
       {/* counter area start */}
-      <CounterFour/>
+      <CounterFour />
       {/* counter area end */}
 
       {/* mission area start */}
-      <MissionArea/>
+      <MissionArea />
       {/* mission area end */}
 
       {/* about area start */}
-      <AboutThree/>
+      <AboutThree />
       {/* about area end */}
 
       {/* team area start */}
-      <TeamAreaThree/>
+      <TeamAreaThree />
       {/* team area end */}
 
       {/* about campus area start */}
-      <AboutCampus/>
+      <AboutCampus />
       {/* about campus area end */}
     </main>
   );

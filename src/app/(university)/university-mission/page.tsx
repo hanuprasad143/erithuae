@@ -12,19 +12,19 @@ export default function UniversityMissionPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo title="Mission and values" subtitle="Mission and values" />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* campus area start */}
-      <CampusChooseAreaThree/>
+      <CampusChooseAreaThree />
       {/* campus area end */}
 
       {/* mission feature area start */}
-      <MissionFeatureArea/>
+      <MissionFeatureArea />
       {/* mission feature area end */}
 
       {/* mission area start */}
-      <MissionAreaTwo/>
+      <MissionAreaTwo />
       {/* mission area end */}
     </main>
   );

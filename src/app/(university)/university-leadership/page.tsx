@@ -10,14 +10,11 @@ export default function UniversityLeaderShipPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Our Leadership"
-        subtitle="Our Leadership"
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* leadership area start */}
-      <LeadershipArea/>
+      <LeadershipArea />
       {/* leadership area end */}
     </main>
   );

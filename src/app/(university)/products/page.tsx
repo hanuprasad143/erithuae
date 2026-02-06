@@ -3,19 +3,19 @@ import BreadcrumbTwo from "@/components/breadcrumb/breadcrumb-two";
 // import CampusChooseArea from "@/components/campus/campus-choose-area";
 // import CounterThree from "@/components/counter/counter-three";
 // import AboutErith from "@/components/about/erith-aboutpage";
-import ErithProducts from "@/components/products/erithproducts";
+// import ErithProducts from "@/components/products/erithproducts";
 import ProductDesc from "@/components/products/prodctdesc";
 import ContactForm from "@/components/form/contact-form";
 
-import AdmissionArea, {
-  AdmissionApplyArea,
-  AdmissionCtaArea,
-} from "@/components/admission/admission-area";
+// import AdmissionArea, {
+//   AdmissionApplyArea,
+//   AdmissionCtaArea,
+// } from "@/components/admission/admission-area";
 
 export const metadata: Metadata = {
   title: "products-Erith",
   icons: {
-    icon: "/favicon.png",   
+    icon: "/favicon.png",
   },
 };
 
@@ -24,13 +24,13 @@ export default function UniversityAdmissionOverviewPage() {
     <main>
       {/* breadcrumb area start */}
       <BreadcrumbTwo
-        // title="Bearing Isolator Labyrinth Seals"
-        // subtitle="Bearing Protection"
+      // title="Bearing Isolator Labyrinth Seals"
+      // subtitle="Bearing Protection"
       />
-      <ProductDesc/>
+      <ProductDesc />
       {/* <ErithProducts/> */}
-      <ContactForm/>
-     
+      <ContactForm />
+
       {/* breadcrumb area end */}
 
       {/* campus overview area start */}
@@ -45,15 +45,13 @@ export default function UniversityAdmissionOverviewPage() {
       {/* <AdmissionArea /> */}
       {/* admission area end */}
 
-       {/* admission apply area start */}
+      {/* admission apply area start */}
       {/* <AdmissionApplyArea /> */}
       {/* admission apply area end */}
 
       {/* admission cta area start */}
       {/* <AdmissionCtaArea /> */}
       {/* admission cta area end */}
-
-      
     </main>
   );
 }

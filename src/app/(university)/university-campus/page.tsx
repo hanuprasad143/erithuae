@@ -15,7 +15,7 @@ export default function UniversityCampusPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo title="Campus Life" subtitle="Campus Life" />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* campus choose area start */}
@@ -23,23 +23,23 @@ export default function UniversityCampusPage() {
       {/* campus choose area end */}
 
       {/* counter area start */}
-      <CounterFive/>
+      <CounterFive />
       {/* counter area end */}
 
       {/* campus student area start */}
-      <CampusStudentArea/>
+      <CampusStudentArea />
       {/* campus student area end */}
 
       {/* campus activity area start */}
-      <CampusActivityArea/>
+      <CampusActivityArea />
       {/* campus activity area end */}
 
       {/* campus video area start */}
-      <CampusVideoArea/>
+      <CampusVideoArea />
       {/* campus video area end */}
 
       {/* campus life area start */}
-      <CampusLifeArea/>
+      <CampusLifeArea />
       {/* campus life area end */}
     </main>
   );

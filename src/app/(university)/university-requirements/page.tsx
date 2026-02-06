@@ -10,14 +10,11 @@ export default function UniversityRequirementsPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Degree Requirements"
-        subtitle="Degree Requirements"
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* requirements area start */}
-      <UniversityRequirementArea/>
+      <UniversityRequirementArea />
       {/* requirements area end */}
     </main>
   );

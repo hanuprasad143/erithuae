@@ -14,26 +14,26 @@ export default function UniversityFinancialPage() {
     <main>
       {/* breadcrumb area start */}
       <BreadcrumbTwo
-        title="Financial Aid"
-        subtitle="Financial Aid"
-        admission={true}
+      // title="Financial Aid"
+      // subtitle="Financial Aid"
+      // admission={true}
       />
       {/* breadcrumb area end */}
 
       {/* campus area start */}
-      <CampusChooseArea/>
+      <CampusChooseArea />
       {/* campus area end */}
 
       {/* counter area start */}
-      <CounterThree/>
+      <CounterThree />
       {/* counter area end */}
 
       {/* process area start */}
-      <ProcessThree/>
+      <ProcessThree />
       {/* process area end */}
 
       {/* financial aid area start */}
-      <FinancialAidArea/>
+      <FinancialAidArea />
       {/* financial aid area end */}
     </main>
   );

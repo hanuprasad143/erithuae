@@ -12,24 +12,20 @@ export default function UniversityProgramPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Academic Programs"
-        subtitle="Academic Programs"
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* about area start */}
-      <AboutTwo spacing="pt-90 pb-90"/>
+      <AboutTwo spacing="pt-90 pb-90" />
       {/* about area end */}
 
       {/* undergraduate area start */}
-      <UndergraduateArea/>
+      <UndergraduateArea />
       {/* undergraduate area end */}
 
       {/* plan area start */}
-      <PlanArea/>
+      <PlanArea />
       {/* plan area end */}
-
     </main>
   );
 }

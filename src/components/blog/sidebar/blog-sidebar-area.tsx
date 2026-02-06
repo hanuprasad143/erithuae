@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { blog_stories_data } from "@/data/blog-data";
 
 export default function BlogSidebarArea() {
-  const truncateText = (text, limit = 50) =>
+  const truncateText = (text: string, limit = 50) =>
     text.length > limit ? text.slice(0, limit) + "..." : text;
 
   return (
@@ -52,7 +53,7 @@ export default function BlogSidebarArea() {
               key={blog.id}
               className="tp-recent-post-item"
             >
-              <img src={blog.img} alt={blog.title} />
+              <Image src={blog.img} alt={blog.title} width={300} height={200} />
 
               <div className="tp-recent-post-overlay">
                 <h5>{truncateText(blog.title, 35)}</h5>

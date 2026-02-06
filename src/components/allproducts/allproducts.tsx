@@ -1,12 +1,12 @@
 "use client";
-import { GridSvg, ListSvg } from "@/components/svg";
+// import { GridSvg, ListSvg } from "@/components/svg";
 import ShopFilterSidebar from "@/app/(shop)/shop-grid/_components/filter/shop-filter-sidebar";
 import usePagination from "@/hooks/use-pagination";
 import bookData from "@/data/book-shop-data";
 import Pagination from "@/components/ui/pagination";
 import ShopItem from "@/components/shop/shop-item";
 import ShopListItem from "@/components/shop/shop-list-item";
-import NiceSelect from "@/components/ui/nice-select";
+// import NiceSelect from "@/components/ui/nice-select";
 // import FooterSocial from "./footer-social";
 import { useState } from "react";
 
@@ -40,9 +40,9 @@ export default function AllProducts({
     [...bookData],
     9,
   );
-  function handleSortBy(item: { value: string; label: string }) {
-    console.log(item);
-  }
+  // function handleSortBy(item: { value: string; label: string }) {
+  //   console.log(item);
+  // }
 
   return (
     <section className="tp-shop-grid-area pt-10">

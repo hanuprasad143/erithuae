@@ -10,17 +10,12 @@ export default function UniversityTuitionFeesPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Tuition & Fees"
-        subtitle="Tuition & Fees"
-        admission={true}
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* tuition area start */}
-      <TuitionArea/>
+      <TuitionArea />
       {/* tuition area end */}
-
     </main>
   );
 }

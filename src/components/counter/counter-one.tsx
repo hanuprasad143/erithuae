@@ -107,7 +107,7 @@ export default function CounterOne() {
           style={{ backgroundColor: "#f8f9fa" }}
         >
           <div className="row gx-0">
-            {counterData.map((item, index) => (
+            {counterData.map((item) => (
               <div key={item.id} className="col-lg-3 col-md-6">
                 <div
                   className="tp-counter-item h-100"

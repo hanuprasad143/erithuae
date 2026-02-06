@@ -12,7 +12,7 @@ export default function ShopItem({ item }: IProps) {
       <div className="tp-shop-product-card">
         <Link href="/products" className="product-image">
           <Image
-            src={item.image}
+            src={item.image || "/placeholder.png"}
             alt={item.title}
             width={282}
             height={380}

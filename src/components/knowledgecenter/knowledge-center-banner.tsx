@@ -16,7 +16,7 @@ import Pagination from "@/components/ui/pagination";
 import usePagination from "@/hooks/use-pagination";
 import successstories from "@/data/knowledge-center-data";
 import KnowledgeFilterSidebar from "@/app/(shop)/shop-grid/_components/knowledgecenterfilter/knowledge-filter-sidebar";
-import ShopFilterSidebar from "@/app/(shop)/shop-grid/_components/filter/shop-filter-sidebar";
+// import ShopFilterSidebar from "@/app/(shop)/shop-grid/_components/filter/shop-filter-sidebar";
 
 type IProps = {
   title?: string;
@@ -70,7 +70,7 @@ export default function KnowledgeCenterBanner({
   // ✅ SINGLE category (null = show all)
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const [selectedTorque, setSelectedTorque] = useState<string[]>([]);
+  // const [selectedTorque, setSelectedTorque] = useState<string[]>([]);
 
   // ✅ Filter logic
   const filteredData = useMemo(() => {
@@ -492,7 +492,7 @@ export default function KnowledgeCenterBanner({
                                 gap: "6px",
                               }}
                             >
-                              {renderIcon(story.icon)}
+                              {/* {renderIcon(story.icon)} */}
                               {story.category}
                             </span>
 
@@ -557,7 +557,9 @@ export default function KnowledgeCenterBanner({
                 <div key={item.id} className="col-xl-12 col-lg-12 col-md-6">
                   <div className="ks-card mb-2">
                     <div className="ks-row">
-                      <div className="ks-icon">{renderIcon(item.icon)}</div>
+                      <div className="ks-icon">
+                        {renderIcon(item.icon ?? "")}
+                      </div>
 
                       <div className="ks-content">
                         <h4 className="ks-card-category">

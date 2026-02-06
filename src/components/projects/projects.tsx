@@ -3,16 +3,13 @@
 import Image from "next/image";
 import { event_data } from "@/data/event-data";
 import usePagination from "@/hooks/use-pagination";
-import Pagination from "../ui/pagination";
-import Link from "next/link";
-import { kids_event_data } from "@/data/event-data";
-import location_svg from "@/assets/img/icon/location.svg";
-import { RightArrow } from "../svg";
+// import Pagination from "../ui/pagination";
+// import Link from "next/link";
+// import { kids_event_data } from "@/data/event-data";
+// import location_svg from "@/assets/img/icon/location.svg";
+// import { RightArrow } from "../svg";
 export default function AllProjects() {
-  const { currentItems, handlePageClick, pageCount } = usePagination(
-    event_data,
-    6,
-  );
+  const { currentItems } = usePagination(event_data, 6);
 
   return (
     <>
@@ -92,7 +89,7 @@ export default function AllProjects() {
                 </div>
               </div>
             ))}
-{/* 
+            {/* 
             <div className="col-xl-7 col-md-4">
               <div className="tp-event-btn text-md-end mb-5">
                 <Link className="tp-btn" href="#">

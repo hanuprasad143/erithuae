@@ -14,11 +14,7 @@ export default function UniversityApplyPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="How to Apply"
-        subtitle="How to Apply"
-        admission={true}
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* campus choose area start */}
@@ -34,7 +30,7 @@ export default function UniversityApplyPage() {
                 <Image
                   src={apply_thumb}
                   alt="apply-thumb"
-                  style={{height:"auto"}}
+                  style={{ height: "auto" }}
                 />
               </div>
             </div>
@@ -44,11 +40,11 @@ export default function UniversityApplyPage() {
       {/* apply area end */}
 
       {/* process area start */}
-      <ProcessTwo/>
+      <ProcessTwo />
       {/* process area end */}
 
       {/* apply requirement area start */}
-      <ApplyRequirement/>
+      <ApplyRequirement />
       {/* apply requirement area end */}
     </main>
   );

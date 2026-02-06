@@ -8,11 +8,13 @@ type IProps = {
   admission?: boolean;
 };
 
-export default function AboutBanner({
-  title = "About Us",
-  subtitle = "We provide the best quality products.",
-  admission,
-}: IProps) {
+export default function AboutBanner(
+  {
+    // title = "About Us",
+    // subtitle = "We provide the best quality products.",
+    // admission,
+  }: IProps,
+) {
   return (
     <>
       <section

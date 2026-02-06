@@ -5,38 +5,38 @@ import Image from "next/image";
 import Link from "next/link";
 import { RightSmArrowThree } from "../svg";
 
-const results = [
-  {
-    id: "home",
-    title: "Description",
-    ariaControls: "home",
-    isActive: true,
-  },
-  {
-    id: "profile",
-    title: "Specifications",
-    ariaControls: "profile",
-    isActive: false,
-  },
-  {
-    id: "contact",
-    title: "Downloads",
-    ariaControls: "contact",
-    isActive: false,
-  },
-  {
-    id: "contact",
-    title: "Features & Benefits",
-    ariaControls: "contact",
-    isActive: false,
-  },
-  {
-    id: "contact",
-    title: "Product Insights",
-    ariaControls: "contact",
-    isActive: false,
-  },
-];
+// const results = [
+//   {
+//     id: "home",
+//     title: "Description",
+//     ariaControls: "home",
+//     isActive: true,
+//   },
+//   {
+//     id: "profile",
+//     title: "Specifications",
+//     ariaControls: "profile",
+//     isActive: false,
+//   },
+//   {
+//     id: "contact",
+//     title: "Downloads",
+//     ariaControls: "contact",
+//     isActive: false,
+//   },
+//   {
+//     id: "contact",
+//     title: "Features & Benefits",
+//     ariaControls: "contact",
+//     isActive: false,
+//   },
+//   {
+//     id: "contact",
+//     title: "Product Insights",
+//     ariaControls: "contact",
+//     isActive: false,
+//   },
+// ];
 
 // ✅ NEW COMPONENT — image on left, content on right
 // function AboutErithInfo() {

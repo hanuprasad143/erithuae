@@ -10,15 +10,11 @@ export default function UniversityDeadlinesPage() {
   return (
     <main>
       {/* breadcrumb area start */}
-      <BreadcrumbTwo
-        title="Dates & Deadlines"
-        subtitle="Dates & Deadlines"
-        admission={true}
-      />
+      <BreadcrumbTwo />
       {/* breadcrumb area end */}
 
       {/* deadline area start */}
-      <DeadlinesArea/>
+      <DeadlinesArea />
       {/* deadline area end */}
     </main>
   );

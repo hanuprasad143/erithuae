@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import thumb_2 from "@/assets/img/shop/shop-thumb-2.png";
-import thumb_3 from "@/assets/img/shop/shop-thumb-3.png";
+// import thumb_2 from "@/assets/img/shop/shop-thumb-2.png";
+// import thumb_3 from "@/assets/img/shop/shop-thumb-3.png";
 import product2 from "@/assets/img/products/product2.png";
 import product6 from "@/assets/img/products/product6.png";
 import { NextArrowFour, PrevArrowFour } from "../svg";
