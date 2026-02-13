@@ -55,7 +55,7 @@ export default function HeaderOne() {
                   </div>
 
                   {/* Contact Us button */}
-                  <div className="tp-header-btn d-none d-md-block ml-30">
+                  <div className="tp-header-btn d-none d-md-block ml-25">
                     <Link
                       href="/contact"
                       style={{
@@ -69,7 +69,7 @@ export default function HeaderOne() {
                         fontSize: "12px",
                       }}
                     >
-                      Request Quote
+                      Request a Quote
                     </Link>
                   </div>
 

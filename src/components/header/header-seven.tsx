@@ -69,7 +69,7 @@ export default function HeaderSeven({ inner, transparent }: HeaderSevenProps) {
                   </div>
 
                   {/* Button */}
-                  <div className="tp-header-btn d-none d-md-block ml-30">
+                  <div className="tp-header-btn d-none d-md-block ml-25">
                     <Link
                       href="/contact"
                       style={{
@@ -80,9 +80,10 @@ export default function HeaderSeven({ inner, transparent }: HeaderSevenProps) {
                         textDecoration: "none",
                         fontWeight: "600",
                         display: "inline-block",
+                            fontSize: "12px",
                       }}
                     >
-                      Get Quote
+                      Request a Quote
                     </Link>
                   </div>
 

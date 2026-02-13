@@ -100,16 +100,40 @@ export default function FooterSeven({
           outline: none !important;
           box-shadow: 0 0 0 2px rgba(29, 58, 114, 0.25) !important;
         }
+        /* Remove full width footer border */
+        // .tp-footer-5-bottom,
+        // .tp-footer-bottom,
+        // .tpd-dashboard-footer-bottom {
+        //   border-top: none !important;
+        //   box-shadow: none !important;
+        // }
+        /* Remove any theme footer separators */
+        .tp-footer-main,
+        .tp-footer-inner,
+        .tp-footer-5-bottom,
+        .tp-footer-bottom,
+        .tpd-dashboard-footer-bottom {
+          border-top: none !important;
+          border-bottom: none !important;
+          box-shadow: none !important;
+        }
       `}</style>
 
-      <footer style={{marginTop: "60px", backgroundColor: bgClr ? bgClr : "#f3f4f8" }}>
+      <footer
+        style={{
+          marginTop: "60px",
+          backgroundColor: bgClr ? bgClr : "#f3f4f8",
+        }}
+      >
         <div
-          className={`tp-footer-main ${
+          className={`tp-footer-main  ${
             dashboard_footer ? "tpd-dashboard-footer" : "tp-footer-inner"
           } pt-80 pb-55`}
-          style={{ backgroundColor: "#f3f4f8" }}
+          style={{
+            backgroundColor: "#f3f4f8",
+          }}
         >
-          <div className="container">
+          <div className="container ">
             <div className="row">
               {/* Column 1 */}
               <div
@@ -253,7 +277,10 @@ export default function FooterSeven({
                             className={`${
                               dashboard_footer ? "" : "tp-btn-inner"
                             }`}
-                            style={{ borderRadius: "10px", padding: "8px 18px", }}
+                            style={{
+                              borderRadius: "10px",
+                              padding: "8px 18px",
+                            }}
                           >
                             Subscribe
                           </button>
@@ -275,10 +302,16 @@ export default function FooterSeven({
           }`}
           style={{ backgroundColor: "#f3f4f8" }}
         >
-          <div className="container">
+          <div
+            className="container"
+            style={{
+              borderTop: "1px solid #1d3a72",
+              paddingTop: "20px",
+            }}
+          >
             <div className="row">
               <div className="col-lg-4">
-                <div className="tp-footer-copyright text-center">
+                <div className="tp-footer-copyright text-start">
                   <span>
                     © {new Date().getFullYear()} <a href="#">Erith Global,</a>{" "}
                     All rights reserved.
