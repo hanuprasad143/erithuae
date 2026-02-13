@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import { Outfit, Jost, Crimson_Pro,Noto_Sans,Poppins } from "next/font/google";
+import {Jost, Crimson_Pro,Noto_Sans,Poppins } from "next/font/google";
 import SocialSidebar from "@/components/SocialSidebar";
 
 const outfit_bold = Poppins({
