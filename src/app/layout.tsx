@@ -1,19 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import { Outfit, Jost, Crimson_Pro } from "next/font/google";
+import { Outfit, Jost, Crimson_Pro,Noto_Sans,Poppins } from "next/font/google";
 import SocialSidebar from "@/components/SocialSidebar";
 
-const outfit_bold = Outfit({
+const outfit_bold = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--tp-ff-body",
 });
-const outfit_heading = Outfit({
+// const outfit_heading = Outfit({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700", "800"],
+//   variable: "--tp-ff-heading",
+// });
+
+const outfit_heading = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--tp-ff-heading",
 });
-const outfit_p = Outfit({
+const outfit_p = Noto_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--tp-ff-p",

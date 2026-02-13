@@ -55,7 +55,7 @@ export default function ContactForm() {
       style={{ maxWidth: "1200px" }}
     >
       {/* Heading */}
-      <h4 className="mb-2" style={{ fontSize: "36px", fontWeight: 600 }}>
+      <h4 className="mb-2" style={{ color: "#1d3a72" }}>
         Learn More
       </h4>
       <h1 className="mb-4" style={{ fontSize: "55px", color: "#555" }}>

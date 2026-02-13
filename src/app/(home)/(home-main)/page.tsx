@@ -52,7 +52,9 @@ export default function HomePage() {
       <ServicesStyle1 />
       <AboutStyle1 />
       <PricingPage />
-      <EventArea />
+   
+        <EventArea />
+  
       <RequestCallStyle1 />
 
       {/* about area start */}
@@ -86,7 +88,9 @@ export default function HomePage() {
       {/* instagram area end */}
 
       {/* cta area start */}
-      <ContactForm />
+      <div style={{ marginRight: "20px" }}>
+        <ContactForm />
+      </div>
 
       {/* <BackToTop/> */}
 

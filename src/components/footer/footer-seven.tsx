@@ -156,7 +156,7 @@ export default function FooterSeven({
               </div>
 
               {/* Column 2 */}
-              <div className="col-xl-3 col-lg-3 col-sm-6">
+              <div className="col-xl-3 col-lg-3 col-sm-6 pl-50">
                 <div
                   className={`tp-footer-widget ${
                     style_2 ? "tp-footer-5-col-2" : "tp-footer-col-2"

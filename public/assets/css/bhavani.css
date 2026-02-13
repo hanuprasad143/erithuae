@@ -940,3 +940,13 @@ p.feature-text {
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 } */
+
+
+
+.custom-hover-border {
+  transition: border-width 0.3s ease;
+}
+
+.custom-hover-border:hover {
+  border-width: 1px !important;
+}

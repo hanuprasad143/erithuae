@@ -41,7 +41,7 @@ export default function BackToTop() {
 
   return (
     <div className="back-to-top-wrapper">
-      <button id="back_to_top" type="button" color="black">
+      <button id="back_to_top" type="button" color="black" style={{fontSize:"12px"}}>
         Back To Top
         <svg
           width="12"

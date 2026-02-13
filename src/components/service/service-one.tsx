@@ -8,7 +8,6 @@ import ser_icon_2 from "@/assets/img/icon/service/icon6.png";
 import ser_icon_3 from "@/assets/img/icon/service/icon7.png";
 import ser_icon_4 from "@/assets/img/icon/service/icon8.png";
 
-
 // import ser_shape from "@/assets/img/shape/service/services-shape-1.png";
 
 // service data
@@ -59,7 +58,10 @@ export default function ServiceOne() {
                       <Image src={item.icon} alt="service-icon" />
                     </span>
                   </div>
-                  <h4 className="tp-service-title">
+                  <h4
+                    className="tp-service-title"
+                    style={{ fontSize: "18px", color: "#1d3a72" }}
+                  >
                     <Link
                       href="#"
                       dangerouslySetInnerHTML={{ __html: item.title }}
@@ -74,7 +76,7 @@ export default function ServiceOne() {
                   </div>
                 </div>
                 <div className="tp-service-content">
-                  <p className="text-black">{item.text}</p>
+                  <p style={{textAlign:"left", lineHeight:"1.3"}} className="text-black">{item.text}</p>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import SingleServices1 from "./SingleServices1";
 const ServicesStyle1 = () => {
   return (
     <>
-      <div className="services-style-one-area bg-white">
+      <div className="services-style-one-area bg-white  pl-15">
         <div className="triangle-shape">
           {/* <Image src={shape10} alt="Shape" /> */}
         </div>
@@ -20,7 +20,7 @@ const ServicesStyle1 = () => {
             <div className="col-lg-5 mb-md-60">
               <div className="service-nav-info">
                 <h4 className="sub-title">What we do</h4>
-                <h2>Excellent service and support for you</h2>
+                <h2 style={{color:"#292929"}}>Excellent service and support for you</h2>
                 <div
                   className="nav nav-tabs service-tab-navs"
                   id="nav-tab"
@@ -68,7 +68,7 @@ const ServicesStyle1 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+            <div className="col-lg-7 pl-50 pl-md-15 pl-xs-15 pr-20">
               <div
                 className="tab-content services-tab-content"
                 id="nav-tabContent"
@@ -81,7 +81,7 @@ const ServicesStyle1 = () => {
                     aria-labelledby={service.ariaLabelled}
                     key={service.id}
                   >
-                    <div className="row">
+                    <div className="row" style={{textAlign:"left"}}>
                       {service.tabData.map((data) => (
                         <div
                           className="col-lg-6 col-md-6 mt-30 mt-md-20 mt-xs-20"

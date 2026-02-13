@@ -12,7 +12,7 @@ const images = [img1, img2, img3];
 
 export default function EventArea() {
   return (
-    <section className="event-area  pt-85 pb-110">
+    <section className="event-area pl-15 pb-50">
       <div className="container">
         {/* Section Header */}
         <div className="row align-items-end">
@@ -40,7 +40,7 @@ export default function EventArea() {
           </div>
 
           <div className="col-xl-7 col-md-4">
-            <div className="tp-event-btn text-md-end mb-70">
+            <div className="tp-event-btn text-md-end pr-15 mb-70">
               <Link
                 className="tp-btn "
                 href="/allproducts"
@@ -91,7 +91,7 @@ export default function EventArea() {
 
                 {/* Arrow Column */}
                 <div className="col-md-1">
-                  <div className="tp-event-arrow text-lg-end">
+                  <div className="tp-event-arrow text-lg-end pr-15">
                     <Link href="#">
                       <span>
                         <RightArrowThree />

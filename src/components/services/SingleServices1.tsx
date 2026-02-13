@@ -22,7 +22,7 @@ const SingleServices1: React.FC<SingleServices1Props> = ({ data }) => {
         {/* <Link href={`/services-details/${id}`}>{title}</Link> */}
         <Link href="#">{title}</Link>
       </h4>
-      <p>{text}</p>
+      <p style={{color:"#292929", lineHeight:"1.3"}}>{text}</p>
     </div>
   );
 };

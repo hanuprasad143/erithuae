@@ -255,9 +255,16 @@ li,
   /**
   @font family declaration
   */
-  --tp-ff-body: "Outfit", sans-serif;
+  /* --tp-ff-body: "Outfit", sans-serif;
   --tp-ff-heading: "Outfit", sans-serif;
   --tp-ff-p: "Outfit", sans-serif;
+  --tp-ff-primary: "Jost", sans-serif;
+  --tp-ff-secondary: "Crimson Pro", serif;
+  --tp-ff-fontawesome: "Font Awesome 6 Pro"; */
+
+  --tp-ff-body: "Poppins", sans-serif;
+  --tp-ff-heading: "Poppins", sans-serif;
+  --tp-ff-p: "Noto Sans", sans-serif;
   --tp-ff-primary: "Jost", sans-serif;
   --tp-ff-secondary: "Crimson Pro", serif;
   --tp-ff-fontawesome: "Font Awesome 6 Pro";
@@ -277,7 +284,7 @@ li,
   --tp-red-2: #1d3a72;
   --tp-red-3: #1d3a72;
   --tp-blue-1: #f1f3f9;
-  --tp-heading-primary: #161613;
+  --tp-heading-primary: #292929;
   --tp-heading-2: #031f42;
   --tp-heading-3: #1d3a72;
   --tp-heading-4: #161821;
@@ -346,6 +353,7 @@ h1 {
 
 h2 {
   font-size: 36px;
+
 }
 
 h3 {
@@ -3858,7 +3866,7 @@ div.demo img {
   position: absolute;
   bottom: -10px;
   left: 37px;
-  color: #161613;
+  color: #292929;
 }
 @media only screen and (max-width: 767px) {
   .tp-section-title span svg {
@@ -3967,7 +3975,7 @@ div.demo img {
   z-index: -1;
 }
 .tp-section-4-title span svg path {
-  stroke: #161613;
+  stroke: #292929;
   stroke-dasharray: 2300;
   stroke-dashoffset: 3500;
   animation: dash 4s linear forwards;
@@ -7757,7 +7765,7 @@ a.ui-button:active {
   width: 24px;
   height: 24px;
   line-height: 20px;
-  color: #161613;
+  color: #292929;
   font-size: 12px;
   font-weight: 500;
   border: 2px solid #b1040e;
@@ -15478,7 +15486,7 @@ a.social-insta {
   background: linear-gradient(180deg, #fffcf4 0%, rgba(246, 244, 239, 0) 100%);
 }
 .tp-counter-4-count {
-  color: #161613;
+  color: #292929;
   font-size: 100px;
   font-style: italic;
   font-weight: 300;
@@ -15922,7 +15930,7 @@ a.social-insta {
 }
 .tp-marquee-title {
   text-transform: uppercase;
-  color: #161613;
+  color: #292929;
   font-size: 22px;
   font-weight: 500;
   display: inline-block;
@@ -17172,7 +17180,7 @@ a.social-insta {
   z-index: -1;
 }
 .tp-school-4-title span svg path {
-  stroke: #161613;
+  stroke: #292929;
   stroke-dasharray: 2300;
   stroke-dashoffset: 3500;
   animation: dash 4s linear forwards;
@@ -18611,7 +18619,7 @@ span.cat-lgreen {
     0 100%;
   transition: background-size 0.4s linear;
   background-image:
-    linear-gradient(#161613, #161613), linear-gradient(#161613, #161613);
+    linear-gradient(#292929, #292929), linear-gradient(#292929, #292929);
 }
 .tp-course-5-title a:hover {
   background-size:
@@ -21735,7 +21743,7 @@ a .course-sky {
   padding-bottom: 64px;
 }
 .tp-brand-5-title {
-  color: #161613;
+  color: #292929;
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 47px;
@@ -24077,7 +24085,7 @@ span.dark-border {
   width: 330px;
   padding: 30px;
   border-radius: 10px;
-  border: 1px solid #161613;
+  border: 1px solid #292929;
   background: var(--tp-common-white);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -24685,7 +24693,7 @@ span.dark-border {
   margin-bottom: 20px;
 }
 .tp-instructor-apply-input label {
-  color: #161613;
+  color: #292929;
   font-size: 15px;
   line-height: 1;
   margin-bottom: 12px;

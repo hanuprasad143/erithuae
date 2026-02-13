@@ -37,7 +37,7 @@ export default function AboutTwo({ spacing = "pt-0 pb-0" }: IProps) {
   return (
     <section className={`about-area ${spacing} white-bg`}>
       <div className="container">
-        <h3 className="tp-about-tutor-title" style={{color: "#000000", marginBottom: "30px"}}>Industries We Serve</h3>
+        <h3 className="tp-about-campus-title mb-3" style={{ marginBottom: "30px" }}>Industries We Serve</h3>
 
         <div className="row align-items-stretch">
           {/* Left large image */}

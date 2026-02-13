@@ -10,7 +10,7 @@ const AboutStyle1 = () => {
   return (
     <div className="about-style-one-area default-padding">
       <div className="container">
-        <div className="row align-center">
+        <div className="row align-end">
           {/* Left Side Text */}
           <div className="col-xl-6 col-lg-6">
             <div className="about-style-one">
@@ -21,7 +21,7 @@ const AboutStyle1 = () => {
                 reliability, safety, and efficiency.
               </h2>
 
-              <p>
+              <p style={{ textAlign: "left", lineHeight: "1.3" }}>
                 Erith, headquartered in the vibrant heart of the Middle East,
                 stands as a premier engineering solutions company, renowned for
                 its expertise in high-end engineered products and solutions.

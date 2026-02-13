@@ -3,6 +3,7 @@ import Image from "next/image";
 // import shape_1 from "@/assets/img/campus/campuses-shape-1.jpg";
 // import shape_2 from "@/assets/img/campus/campuses-shape-2.jpg";
 import Link from "next/link";
+
 // import mission_thumb_3 from "@/assets/img/our-mission/Gala_night_group_photo.jpg";
 // import ContactForm from "../form/contact-form";
 // nav items
@@ -115,7 +116,7 @@ function AboutErithInfo() {
               <h3 className="tp-about-campus-title mb-3">
                 Our Mission & Vision
               </h3>
-              <p className="mb-4">
+              <p style={{ lineHeight: 1.3 }} className="mb-4">
                 At Erith, our mission and vision center on inspiring change
                 through responsibility, innovation, and excellence. We provide
                 advanced industrial solutions that enhance efficiency, safety,
@@ -161,7 +162,7 @@ function Joinourteam() {
           <div className="col-lg-6">
             <div className="tp-about-campus-info-content">
               <h3 className="tp-about-campus-title mb-3">Join our Team</h3>
-              <p className="mb-4">
+              <p style={{ lineHeight: 1.3 }} className="mb-4">
                 Erith’s extensively trained staff is knowledgeable in all
                 aspects of flow control technology and provides personal
                 attention to every customer. With years of hands-on industry
@@ -218,12 +219,20 @@ export default function AboutErith() {
             {/* Right content */}
             <div className="col-lg-6">
               <div className="tp-about-campus-info-content">
-                <h3 className="tp-about-campus-title mb-3">About Us</h3>
-                <h4>
+                <h3
+                  className="tp-about-campus-title mb-3"
+                  style={{ color: "#1d3a72" }}
+                >
+                  About Us
+                </h3>
+                <h4 style={{ color: "#292929" }} className="mb-4">
                   Explore diverse industry focused services ensuring operational
                   reliability, safety, and efficiency.
                 </h4>
-                <p className="mb-4">
+                <p
+                  className="mb-4"
+                  style={{ lineHeight: 1.3, color: "#292929" }}
+                >
                   Erith Specialized Solutions, strategically located in Middle
                   East, is one of the region’s most advance engineering
                   solutions company providing high-end engineered products and

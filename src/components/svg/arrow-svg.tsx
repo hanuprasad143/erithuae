@@ -216,7 +216,6 @@ export function RightArrow({ clr = "white" }: { clr?: string }) {
   );
 }
 
-
 export function LeftArrow({ clr = "white" }: { clr?: string }) {
   return (
     <svg
@@ -244,8 +243,7 @@ export function LeftArrow({ clr = "white" }: { clr?: string }) {
   );
 }
 
-
-export function RightArrowTwo({ clr = "#161613" }: { clr?: string }) {
+export function RightArrowTwo({ clr = "#292929" }: { clr?: string }) {
   return (
     <svg
       width="12"
@@ -682,6 +680,3 @@ export function NextArrowFive() {
     </svg>
   );
 }
-
-
-

@@ -7,7 +7,7 @@ import ErithContactInfoArea from "./erith-contact-info";
 
 const PricingPage = () => {
   return (
-    <section className="pricing-wrapper pricing-1 style-2 section-padding pt-0 ">
+    <section className="pricing-wrapper pricing-1 style-2 section-padding pt-0 mr-20  ">
       {/* Decorative Shapes */}
       <div className="shape">
         <div className="light-shape" />
@@ -26,7 +26,7 @@ const PricingPage = () => {
         {/* <Pricing /> */}
 
         <div className="row justify-content-start">
-          <div className="col-xl-8 col-lg-10">
+          <div className="col-xl-8 col-lg-10 ml-10">
             <div
               className="tp-section text-start wow fadeInUp"
               data-wow-delay=".4s"
@@ -41,6 +41,7 @@ const PricingPage = () => {
               </p> */}
             </div>
           </div>
+
           <ErithContactInfoArea />
         </div>
       </div>

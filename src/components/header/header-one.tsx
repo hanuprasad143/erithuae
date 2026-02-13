@@ -66,9 +66,10 @@ export default function HeaderOne() {
                         textDecoration: "none",
                         fontWeight: "600",
                         display: "inline-block",
+                        fontSize: "12px",
                       }}
                     >
-                      Get Quote
+                      Request Quote
                     </Link>
                   </div>
 
