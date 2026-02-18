@@ -11,7 +11,9 @@ export default function BlogSidebarArea() {
       {/* Top Posts */}
       <div className="tp-sidebar-widget mb-50">
         <div className="tp-sidebar-content">
-          <h5 className="tp-sidebar-widget-title">Top Posts</h5>
+          <h5 className="tp-sidebar-widget-title" style={{ color: "#292929" }}>
+            Top Posts
+          </h5>
 
           <ul className="tp-sidebar-post-list">
             {blog_stories_data.slice(0, 5).map((blog, index) => (
@@ -20,6 +22,7 @@ export default function BlogSidebarArea() {
                 <Link href={`#`}>
                   <div className="d-flex align-items-start">
                     <span
+                      className="tp-sidebar-post-number"
                       style={{
                         marginRight: "12px",
                         fontSize: "32px",
@@ -43,7 +46,9 @@ export default function BlogSidebarArea() {
 
       {/* Recent Posts */}
       <div className="tp-sidebar-widget">
-        <h5 className="tp-sidebar-widget-title">Recent Posts</h5>
+        <h5 className="tp-sidebar-widget-title" style={{ color: "#292929" }}>
+          Recent Posts
+        </h5>
 
         <div className="tp-recent-post-grid">
           {blog_stories_data.slice(0, 6).map((blog) => (

@@ -91,7 +91,7 @@ export default function KnowledgeFilterSidebar({
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <FaFlag size={12} color="#1d3a72" />
+              <FaFlag size={12} color="#fecb00" />
               <h3 style={{ fontSize: "12px", margin: 0 }}>Featured</h3>
             </div>
 
@@ -127,8 +127,8 @@ export default function KnowledgeFilterSidebar({
             <div style={{ marginTop: "8px" }}>
               <span
                 style={{
-                  color: "#1d3a72",
-                  fontSize: "13px",
+                  color: "#fecb00",
+                  fontSize: "15px",
                   fontWeight: "600",
                   display: "inline-flex",
                   alignItems: "center",
@@ -136,13 +136,13 @@ export default function KnowledgeFilterSidebar({
                 }}
               >
                 {renderIcon(currentStory.icon)}
-                {currentStory.category}
+                <div style={{ color: "#292929" }}>{currentStory.category}</div>
               </span>
 
               <h3
                 style={{
-                  color: "black",
-                  fontSize: "11px",
+                  color: "#292929",
+                  fontSize: "13px",
                   fontWeight: "700",
                   lineHeight: "1.3",
                   marginTop: "8px",
@@ -160,9 +160,10 @@ export default function KnowledgeFilterSidebar({
               >
                 {currentStory.description?.substring(0, 100)}...
                 <a
+                  className="event-read-more text-decoration-none"
                   href="#"
                   style={{
-                    color: "#1d3a72",
+                    // color: "#fecb00",
                     textDecoration: "none",
                     fontSize: "12px",
                     display: "flex",

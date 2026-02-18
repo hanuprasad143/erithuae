@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import CounterOne from "../counter/counter-one";
 import { useState } from "react";
-
+import { FaSearch } from "react-icons/fa";
 // import { LocationFour, HomeSvg } from "../svg";
 import Link from "next/link";
 
@@ -168,13 +168,13 @@ const ApplicationGuides = [
 type IProps = {
   title?: string;
   subtitle?: string;
-  admission?: boolean;
+  // admission?: boolean;
 };
 
 export default function ResourceBanner({
   title = "Hello, how can we help?",
   subtitle = "Learn more about how Erith can transform and help your company.",
-  admission,
+  // admission,
 }: IProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -198,57 +198,77 @@ export default function ResourceBanner({
                 <div className="tp-breadcrumb__list inner-after">
                   <h2
                     className="tp-breadcrumb__title color mb-10"
-                    style={{ fontSize: "48px", lineHeight: "1.2" }}
+                    style={{ fontSize: "35px", lineHeight: "1.2",fontWeight:"5px" }}
                   >
                     {title}
                   </h2>
 
-                  <p style={{ fontSize: "18px", color: "white" }}>{subtitle}</p>
-                  <div className="tp-leadership-search p-relative">
-                    <div className="tp-header-2-search align-text">
+                  <p style={{ fontSize: "15px", color: "white" }}>{subtitle}</p>
+
+                  <div
+                    className="tp-leadership-search p-relative"
+                    style={{
+                      position: "relative",
+                      width: "700px",
+                      margin: "0 auto",
+                    }}
+                  >
+                    <div style={{ position: "relative" }}>
+                      {/* Search Icon */}
+                      <FaSearch
+                        style={{
+                          position: "absolute",
+                          left: "15px",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "#888",
+                          fontSize: "16px",
+                          pointerEvents: "none", // 👈 prevents blocking typing
+                        }}
+                      />
+
+                      {/* Input */}
                       <input
                         type="text"
                         placeholder="Search..."
-                        style={{ width: "700px" }}
-                      />
-                      <div
                         style={{
-                          color: "white",
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "12px",
-                          flexWrap: "wrap",
+                          width: "100%",
+                          height: "45px",
+                          paddingLeft: "45px", // 👈 space for icon
+                          paddingRight: "15px",
+                          borderRadius: "6px",
                         }}
-                      ></div>
+                      />
                     </div>
                   </div>
 
-                  {admission && (
+                  {/* {admission && (
                     <div className="mt-10">
                       <span className="white fw-bold">Admission</span>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="tp-campus-student-list d-flex justify-content-center">
+        <div className="tp-campus-student-list d-flex justify-content-center  mt-5">
           <div className="d-flex align-items-center gap-1 flex-wrap">
             <p
               style={{
                 fontSize: "18px",
                 margin: 0,
                 color: "white",
+                marginRight: "5px",
               }}
             >
               Featured Topics:
             </p>
 
-            <ul className="nav nav-tabs" id="myTab" role="tablist">
-              {navData.map((nav) => (
-                <li key={nav.id} className="nav-item" role="presentation">
-                  {/* <button
+            {/* <ul className="nav nav-tabs" id="myTab" role="tablist"> */}
+            {navData.map((nav) => (
+              <li key={nav.id} className="nav-item" role="presentation">
+                {/* <button
                     className={`nav-link ${nav.isActive ? "active" : ""}`}
                     style={{ fontSize: "12px", color: "white" }}
                     id={`${nav.id}-tab`}
@@ -262,24 +282,24 @@ export default function ResourceBanner({
                   >
                     {nav.title}
                   </button> */}
-                  <Link
-                    className="btn rectangle btn-light  mt-xs-10 btn-md radius animation"
-                    href="/contact"
-                    style={{
-                      // padding: "8px",
-                      fontSize: "12px",
-                      // fontWeight: "400",
-                      padding: "4px 14px",
-                      borderRadius: "10px",
-                      marginRight: "12px",
-                      marginLeft: "0px",
-                    }}
-                  >
-                    {nav.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                <Link
+                  className="btn rectangle btn-light  mt-xs-10 btn-sm radius animation"
+                  href="/contact"
+                  style={{
+                    // padding: "8px",
+                    fontSize: "10px",
+                    // fontWeight: "400",
+                    padding: "4px 14px",
+                    borderRadius: "10px",
+                    marginRight: "6px",
+                    marginLeft: "0px",
+                  }}
+                >
+                  {nav.title}
+                </Link>
+              </li>
+            ))}
+            {/* </ul> */}
           </div>
         </div>
       </section>
@@ -294,8 +314,8 @@ export default function ResourceBanner({
             <div className="row" style={{ marginTop: "30px" }}>
               <h2
                 style={{
-                  fontSize: "28px",
-                  color: "black",
+                  fontSize: "25px",
+                  color: "#292929",
                   marginBottom: "30px",
                 }}
               >
@@ -307,8 +327,8 @@ export default function ResourceBanner({
                     href={item.href}
                     className="tp-contact-info-item w-100 d-flex justify-content-between align-items-center"
                     style={{
-                      padding: "5px 4px", // ⬅ reduced
-                      minHeight: "48px", // ⬅ reduced
+                      padding: "5px 4px",
+                      minHeight: "48px",
                       transition: "all 0.3s ease",
                       cursor: "pointer",
                       backgroundColor:
@@ -322,12 +342,12 @@ export default function ResourceBanner({
                       className="tp-contact-info d-flex align-items-center"
                       style={{ gap: "20px", padding: "20px 30px" }} // ⬅ reduced
                     >
-                      <span style={{ fontSize: "16px" }}>{item.icon}</span>
+                      <span style={{ fontSize: "15px" }}>{item.icon}</span>
                       <h4
                         className="tp-contact-info-title mb-0"
                         style={{
-                          color: "#000",
-                          fontSize: "14px", // ⬅ reduced
+                          color: "#292929",
+                          fontSize: "15px", // ⬅ reduced
                         }}
                       >
                         {item.title}
@@ -377,8 +397,8 @@ export default function ResourceBanner({
                 <div className="d-flex justify-content-between align-items-center mb-30">
                   <h2
                     style={{
-                      fontSize: "28px",
-                      color: "black",
+                      fontSize: "25px",
+                      color: "#292929",
                       marginBottom: "0",
                     }}
                   >
@@ -387,9 +407,9 @@ export default function ResourceBanner({
                   <a
                     href="#"
                     style={{
-                      color: "black",
+                      color: "#292929",
                       textDecoration: "none",
-                      fontSize: "16px",
+                      fontSize: "15px",
                       display: "flex",
                       alignItems: "center",
                       gap: "8px",
@@ -462,8 +482,8 @@ export default function ResourceBanner({
                       <div style={{ flex: 1 }}>
                         <h5
                           style={{
-                            color: "#000",
-                            fontSize: "16px",
+                            color: "#292929",
+                            fontSize: "15px",
                             fontWeight: "600",
                             marginBottom: "6px",
                           }}
@@ -473,7 +493,7 @@ export default function ResourceBanner({
                         <p
                           style={{
                             color: "#333",
-                            fontSize: "14px",
+                            fontSize: "13px",
                             marginBottom: "0",
                             lineHeight: "1.5",
                           }}
@@ -494,6 +514,7 @@ export default function ResourceBanner({
                           fontWeight: "600",
                           display: "inline-block",
                           marginLeft: "50px",
+                          fontSize: "13px",
                         }}
                       >
                         Download
@@ -502,7 +523,7 @@ export default function ResourceBanner({
                       <span
                         style={{
                           color: "#666",
-                          fontSize: "14px",
+                          fontSize: "15px",
                           marginRight: "70px",
                           marginTop: "5px",
                         }}
@@ -524,8 +545,8 @@ export default function ResourceBanner({
             <div className="d-flex justify-content-between align-items-center mb-30">
               <h2
                 style={{
-                  fontSize: "28px",
-                  color: "black",
+                  fontSize: "25px",
+                  color: "#292929",
                   marginBottom: "0",
                 }}
               >
@@ -534,9 +555,9 @@ export default function ResourceBanner({
               <a
                 href="#"
                 style={{
-                  color: "black",
+                  color: "#292929",
                   textDecoration: "none",
-                  fontSize: "16px",
+                  fontSize: "15px",
                   display: "flex",
                   alignItems: "center",
                   gap: "8px",
@@ -587,6 +608,7 @@ export default function ResourceBanner({
                         textDecoration: "none",
                         fontWeight: "600",
                         display: "inline-block",
+                        fontSize: "13px",
                       }}
                     >
                       <FaFileAlt size={14} /> Case Study
@@ -594,7 +616,7 @@ export default function ResourceBanner({
                     <h3
                       style={{
                         color: "white",
-                        fontSize: "18px",
+                        fontSize: "15px",
                         fontWeight: "400",
                         lineHeight: "1.2",
                         marginTop: "12px",
@@ -608,11 +630,11 @@ export default function ResourceBanner({
                   {/* Bottom Content - Button */}
                   <div>
                     <Link
-                      className="btn rectangle btn-light  mt-xs-10 btn-md radius animation"
+                      className="btn rectangle btn-light  mt-xs-10 btn-sm radius animation"
                       href="/knowledgecenter"
                       style={{
                         // padding: "8px",
-                        fontSize: "14px",
+                        fontSize: "13px",
                         fontWeight: "600",
                         padding: "6px 16px",
                         borderRadius: "10px",
@@ -635,8 +657,8 @@ export default function ResourceBanner({
             <div className="d-flex justify-content-between align-items-center mb-30">
               <h2
                 style={{
-                  fontSize: "28px",
-                  color: "black",
+                  fontSize: "25px",
+                  color: "#292929",
                   marginBottom: "0",
                 }}
               >
@@ -645,9 +667,9 @@ export default function ResourceBanner({
               <a
                 href="#"
                 style={{
-                  color: "black",
+                  color: "#292929",
                   textDecoration: "none",
-                  fontSize: "16px",
+                  fontSize: "15px",
                   display: "flex",
                   alignItems: "center",
                   gap: "8px",
@@ -698,6 +720,7 @@ export default function ResourceBanner({
                         textDecoration: "none",
                         fontWeight: "600",
                         display: "inline-block",
+                        fontSize: "13px",
                       }}
                     >
                       <FaFileAlt size={14} /> Application Guide
@@ -705,7 +728,7 @@ export default function ResourceBanner({
                     <h3
                       style={{
                         color: "white",
-                        fontSize: "18px",
+                        fontSize: "15px",
                         fontWeight: "400",
                         lineHeight: "1.2",
                         marginTop: "12px",
@@ -738,11 +761,11 @@ export default function ResourceBanner({
                       }}
                     ></button> */}
                     <Link
-                      className="btn rectangle btn-light  mt-xs-10 btn-md radius animation"
+                      className="btn rectangle btn-light  mt-xs-10 btn-sm radius animation"
                       href="/knowledgecenter"
                       style={{
                         // padding: "8px",
-                        fontSize: "14px",
+                        fontSize: "13px",
                         fontWeight: "600",
                         padding: "6px 16px",
                         borderRadius: "10px",

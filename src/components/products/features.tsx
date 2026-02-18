@@ -8,7 +8,10 @@ export default function Features() {
   return (
     <section className="program-area mb-75">
       <div className="container">
-        <h5 className="" style={{ color: "#1d3a72", marginBottom: "30px", fontSize:"38px" }}>
+        <h5
+          className=""
+          style={{ color: "#292929", marginBottom: "30px", fontSize: "25px" }}
+        >
           More Details
         </h5>
         <p

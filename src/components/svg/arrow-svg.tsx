@@ -173,14 +173,14 @@ export function RightSmArrowThree() {
     >
       <path
         d="M1 6H11"
-        stroke="#1d3a72"
+        stroke="#292929"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M6 1L11 6L6 11"
-        stroke="#1d3a72"
+        stroke="#292929"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

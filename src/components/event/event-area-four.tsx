@@ -7,7 +7,7 @@ import usePagination from "@/hooks/use-pagination";
 import Link from "next/link";
 // import { kids_event_data } from "@/data/event-data";
 // import location_svg from "@/assets/img/icon/location.svg";
-import { RightArrow } from "../svg";
+// import { RightArrow } from "../svg";
 export default function EventAreaFour() {
   const { currentItems } = usePagination(event_data, 10);
 
@@ -97,7 +97,12 @@ export default function EventAreaFour() {
                         className="tp-event-inner-title"
                         style={{ paddingLeft: "10px", fontSize: "20px" }}
                       >
-                        <Link href={item.link ?? "#"}>{item.title}</Link>
+                        <Link
+                          style={{ color: "#292929" }}
+                          href={item.link ?? "#"}
+                        >
+                          {item.title}
+                        </Link>
                       </h4>
 
                       <span
@@ -132,8 +137,8 @@ export default function EventAreaFour() {
               <div className="d-flex justify-content-between align-items-center mb-30">
                 <h2
                   style={{
-                    fontSize: "28px",
-                    color: "#1d3a72",
+                    fontSize: "25px",
+                    color: "#292929",
                     marginBottom: "0",
                   }}
                 >
@@ -163,38 +168,31 @@ export default function EventAreaFour() {
               </div>
             </div>
             {currentItems.slice(0, 6).map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-6">
-                <div className="tp-event-inner-item mb-30">
+              <div key={item.id} className="col-lg-4 col-md-6 d-flex mb-4">
+                <div className="tp-event-inner-item mb-30 w-100">
                   <div className="tp-event-inner-thumb">
-                    {/* <Link> */}
-                    {/* <Link href={`/event-details/${item.id}`}></Link> */}
                     <Image
                       src={item.image}
                       alt={item.title}
                       width={384}
                       height={240}
-                      style={{ height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "240px",
+                        objectFit: "cover",
+                      }}
                     />
-                    {/* </Link> */}
                   </div>
 
                   <div className="tp-event-inner-content">
-                    <h4 className="tp-event-inner-title">
-                      {/* <Link href={`/event-details/${item.id}`}> */}
-                      {item.title}
-                      {/* </Link> */}
-                    </h4>
+                    <h4 className="tp-event-inner-title">{item.title}</h4>
 
                     <span className="tp-event-inner-date">
                       {item.date.day} {item.date.month}, {item.date.year}
                     </span>
 
-                    <div className="tp-event-inner-btn-box d-flex align-items-center justify-content-between">
-                      {/* <Link
-                        href={`/event-details/${item.id}`}
-                        className="event-read-more text-decoration-none d-inline-flex align-items-center"
-                      > */}
-                      {item.linkText} →{/* </Link> */}
+                    <div className="tp-event-inner-btn-box">
+                      <Link href={""}>{item.linkText} →</Link>
                     </div>
                   </div>
                 </div>
@@ -203,11 +201,26 @@ export default function EventAreaFour() {
 
             <div className="col-xl-7 col-md-4 mt-20">
               <div className="tp-event-btn text-md-end mb-5">
-                <Link className="tp-btn" href="#">
+                {/* <Link className="tp-btn" href="#">
                   View All Articles
                   <span>
                     <RightArrow />
                   </span>
+                </Link> */}
+                <Link
+                  href="/contact"
+                  style={{
+                    backgroundColor: "#1d3a72",
+                    color: "#fff", // black text
+                    padding: "8px 18px",
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontWeight: "600",
+                    display: "inline-block",
+                    fontSize: "12px",
+                  }}
+                >
+                  View All Articles →
                 </Link>
               </div>
             </div>

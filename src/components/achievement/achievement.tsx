@@ -16,7 +16,7 @@ const AchievementCounter1 = () => {
                 </div>
                 <div className="operator">+</div>
               </div>
-              <span className="medium">Products given over 5 years</span>
+              <span className="small">Products given over 5 years</span>
             </div>
           </li>
           <li>
@@ -30,7 +30,7 @@ const AchievementCounter1 = () => {
                 </div>
                 <div className="operator">+</div>
               </div>
-              <span className="medium">
+              <span className="small">
                 Business Excellence awards achieved
               </span>
             </div>

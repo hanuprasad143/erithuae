@@ -3,10 +3,14 @@ import Image from "next/image";
 import { RightArrowTwo } from "../svg";
 
 // icons
-import ser_icon_1 from "@/assets/img/icon/service/icon5.png";
-import ser_icon_2 from "@/assets/img/icon/service/icon6.png";
-import ser_icon_3 from "@/assets/img/icon/service/icon7.png";
-import ser_icon_4 from "@/assets/img/icon/service/icon8.png";
+import ser_icon_1 from "@/assets/img/icon/service/icon11.png";
+import ser_icon_2 from "@/assets/img/icon/service/icon12.png";
+import ser_icon_3 from "@/assets/img/icon/service/icon13.png";
+import ser_icon_4 from "@/assets/img/icon/service/icon14.png";
+// import ser_icon_5 from "@/assets/img/icon/service/icon5.png";
+// import ser_icon_6 from "@/assets/img/icon/service/icon6.png";
+// import ser_icon_7 from "@/assets/img/icon/service/icon7.png";
+// import ser_icon_8 from "@/assets/img/icon/service/icon8.png";
 
 // import ser_shape from "@/assets/img/shape/service/services-shape-1.png";
 
@@ -60,7 +64,7 @@ export default function ServiceOne() {
                   </div>
                   <h4
                     className="tp-service-title"
-                    style={{ fontSize: "18px", color: "#1d3a72" }}
+                    style={{ fontSize: "18px", color: "#292929" }}
                   >
                     <Link
                       href="#"
@@ -76,7 +80,12 @@ export default function ServiceOne() {
                   </div>
                 </div>
                 <div className="tp-service-content">
-                  <p style={{textAlign:"left", lineHeight:"1.3"}} className="text-black">{item.text}</p>
+                  <p
+                    style={{ textAlign: "left", lineHeight: "1.3" }}
+                    className="text-black"
+                  >
+                    {item.text}
+                  </p>
                 </div>
               </div>
             </div>

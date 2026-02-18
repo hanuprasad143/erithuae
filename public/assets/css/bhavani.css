@@ -158,13 +158,13 @@ p.feature-text {
 }
 
 .product-filter-categories ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 /* Links */
 .product-filter-categories ul li a {
   font-weight: 400;
-  font-size: 15px;
+  /* font-size: 15px; */
   color: #333;
   position: relative;
   padding-left: 16px;
@@ -322,7 +322,6 @@ p.feature-text {
   background-color: #fff;
   color: #000;
   border: 2px solid #1d3a72;
-  
 }
 
 /* Hover effects */
@@ -396,6 +395,7 @@ p.feature-text {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: #fecb00;
 }
 
 /* CENTER – TEXT */
@@ -423,7 +423,7 @@ p.feature-text {
   font-weight: 600;
   margin: 0;
   line-height: 1.2;
-  color: #1d3a72;
+  color: #292929;
 }
 
 .ks-card-title {
@@ -499,14 +499,14 @@ p.feature-text {
 
 .event-read-more {
   color: #000;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: auto;
   transition: color 0.3s ease;
 }
 
 .event-read-more:hover {
-  color: #1d3a72;
+  color: #fecb00;
 }
 
 /* image overlay news page */
@@ -812,10 +812,6 @@ p.feature-text {
   pointer-events: none;
 }
 
-
-
-
-
 .tp-recent-post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -870,7 +866,6 @@ p.feature-text {
   opacity: 0.85;
 }
 
-
 .tp-recent-post-overlay h5 {
   font-size: 12px;
   margin-bottom: 4px;
@@ -882,8 +877,6 @@ p.feature-text {
 .tp-recent-post-item:hover .tp-recent-post-overlay h5 {
   color: #fff;
 }
-
-
 
 .program-card {
   background: #f3f4f8;
@@ -918,7 +911,9 @@ p.feature-text {
   padding: 6px 16px;
   border-radius: 6px;
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 /* Inquire button */
@@ -941,12 +936,45 @@ p.feature-text {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 } */
 
-
-
 .custom-hover-border {
   transition: border-width 0.3s ease;
 }
 
 .custom-hover-border:hover {
   border-width: 1px !important;
+}
+
+/* benny css */
+
+/* close */
+
+/* Make entire card equal height */
+.tp-event-inner-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Content stretches */
+.tp-event-inner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Force equal title height (2 lines max) */
+.tp-event-inner-title {
+  font-size: 18px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 20px;
+}
+
+/* Push button to bottom */
+.tp-event-inner-btn-box {
+  margin-top: auto;
 }

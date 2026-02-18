@@ -113,7 +113,10 @@ function AboutErithInfo() {
           {/* Right content */}
           <div className="col-lg-6">
             <div className="tp-about-campus-info-content">
-              <h3 className="tp-about-campus-title mb-3">
+              <h3
+                className="tp-about-campus-title mb-3"
+                style={{ color: "#1d3a72" }}
+              >
                 Our Mission & Vision
               </h3>
               <p style={{ lineHeight: 1.3 }} className="mb-4">
@@ -161,7 +164,12 @@ function Joinourteam() {
           {/* Right content */}
           <div className="col-lg-6">
             <div className="tp-about-campus-info-content">
-              <h3 className="tp-about-campus-title mb-3">Join our Team</h3>
+              <h3
+                className="tp-about-campus-title mb-3"
+                style={{ color: "#1d3a72" }}
+              >
+                Join our Team
+              </h3>
               <p style={{ lineHeight: 1.3 }} className="mb-4">
                 Erith’s extensively trained staff is knowledgeable in all
                 aspects of flow control technology and provides personal
@@ -225,13 +233,29 @@ export default function AboutErith() {
                 >
                   About Us
                 </h3>
-                <h4 style={{ color: "#292929" }} className="mb-4">
+
+                <h4
+                  style={{ color: "#292929", fontSize: "25px" }}
+                  className="mb-4"
+                >
+                  Explore diverse industry focused services ensuring operational
+                  reliability, safety, and efficiency.
+                </h4>
+
+                <h4
+                  style={{ color: "#292929", fontSize: "18px" }}
+                  className="mb-4"
+                >
                   Explore diverse industry focused services ensuring operational
                   reliability, safety, and efficiency.
                 </h4>
                 <p
                   className="mb-4"
-                  style={{ lineHeight: 1.3, color: "#292929" }}
+                  style={{
+                    lineHeight: 1.3,
+                    color: "#292929",
+                    // fontSize: "15px",
+                  }}
                 >
                   Erith Specialized Solutions, strategically located in Middle
                   East, is one of the region’s most advance engineering

@@ -1,4 +1,4 @@
-import { LocationFour, HomeSvg } from "../svg";
+import { LocationFour, HomeSvg,LocationFive } from "../svg";
 import Link from "next/link";
 
 const contactInfoData = [
@@ -19,7 +19,7 @@ const contactInfoData = [
     buttonLink: "Our Global Presence",
   },
   {
-    icon: <HomeSvg />,
+    icon: <LocationFive />,
     title: "Innovation Happens",
     description: "See Where",
     linkText: "Office No.3,Plot ",
@@ -36,7 +36,10 @@ export default function ErithContactInfoArea() {
           <div className="row justify-content-start">
             <div className="col-lg-12">
               <div className="tp-contact-info-wrapper text-start">
-                <h3 className="tp-contact-main-title col-lg-6">
+                <h3
+                  className="tp-contact-main-title col-lg-6"
+                  style={{ fontSize: "25px", color: "#292929" }}
+                >
                   {" "}
                   With a presence in over 40 countries, Erith’s regional
                   networks offer specialized solutions tailored to meet the
@@ -48,11 +51,16 @@ export default function ErithContactInfoArea() {
                   <div key={index} className="col-lg-3 col-md-6">
                     <div className="tp-contact-info-item mb-4 mb-lg-0">
                       <div className="tp-contact-info-icon">
-                        <span style={{ color: "#1d3a72" }}>{item.icon}</span>
+                        <span style={{ color: "#fecb00" }}>{item.icon}</span>
                       </div>
 
                       <p>{item.description}</p>
-                      <h4 className="tp-contact-info-title">{item.title}</h4>
+                      <h4
+                        className="tp-contact-info-title"
+                        style={{ fontSize: "18px" }}
+                      >
+                        {item.title}
+                      </h4>
                       {/* <a href={item.href}>{item.linkText}</a> */}
                       <div className="tp-banner">
                         <Link
@@ -67,7 +75,7 @@ export default function ErithContactInfoArea() {
                             textDecoration: "none",
                             fontWeight: "400",
                             display: "inline-block", // same color border
-                            fontSize: "14px",
+                            fontSize: "13px",
                           }}
                         >
                           {item.buttonLink}

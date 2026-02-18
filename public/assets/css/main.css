@@ -293,7 +293,7 @@ li,
   --tp-theme-secondary: #1d3a72;
   --tp-theme-3: #ff7162;
   --tp-theme-4: #1d3a72;
-  --tp-theme-5: #f0ec51;
+  --tp-theme-5: #fecb00;
   --tp-theme-6: #1e1e2f;
   --tp-theme-7: #4661fd;
   --tp-theme-8: #1d3a72;
@@ -353,7 +353,6 @@ h1 {
 
 h2 {
   font-size: 36px;
-
 }
 
 h3 {
@@ -13450,7 +13449,7 @@ a.social-insta {
 }
 .tp-about-campus-title {
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   margin-bottom: 18px;
   letter-spacing: -1.2px;
@@ -15583,7 +15582,7 @@ a.social-insta {
   margin-bottom: 3px;
 }
 .tp-service-title a:hover {
-  color: var(--tp-theme-primary);
+  color: var(--tp-theme-5);
 }
 .tp-service-btn {
   transform: translateY(35px);
@@ -16082,7 +16081,7 @@ a.social-insta {
   content: "";
   width: 0;
   height: 1px;
-  background: #1d3a72;
+  background: #292929;
   left: auto;
   right: 0;
   bottom: -2px;

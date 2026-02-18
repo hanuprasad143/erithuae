@@ -27,7 +27,7 @@ export default function NavPagesDropdown({ pages_dropdown }: IProps) {
                       <ul>
                         {pd.dropdown_menus.map((sm) => (
                           <li key={sm.id}>
-                            <Link href={sm.link}>{sm.title}</Link>
+                            <Link style={{fontSize:"15px"}} href={sm.link}>{sm.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -44,7 +44,7 @@ export default function NavPagesDropdown({ pages_dropdown }: IProps) {
                             <ul>
                               {pd.dropdown_menus.slice(0, 6).map((sm) => (
                                 <li key={sm.id}>
-                                  <Link href={sm.link}>{sm.title}</Link>
+                                  <Link style={{fontSize:"15px"}}  href={sm.link}>{sm.title}</Link>
                                 </li>
                               ))}
                             </ul>
@@ -53,7 +53,7 @@ export default function NavPagesDropdown({ pages_dropdown }: IProps) {
                             <ul>
                               {pd.dropdown_menus.slice(6).map((sm) => (
                                 <li key={sm.id}>
-                                  <Link href={sm.link}>{sm.title}</Link>
+                                  <Link style={{fontSize:"15px"}} href={sm.link}>{sm.title}</Link>
                                 </li>
                               ))}
                             </ul>

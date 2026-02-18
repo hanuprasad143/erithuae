@@ -29,7 +29,10 @@ export default function BlogStandardItem({ blog }: IProps) {
          
         </div> */}
         <span>{blog.date}</span>
-        <h3 className="tp-postbox-title">
+        <h3
+          className="tp-postbox-title"
+          style={{ fontSize: "25px", color: "#292929" }}
+        >
           {/* <Link href={`/blog-details/${blog.id}`}>{blog.title}</Link> */}
           {blog.title}
         </h3>

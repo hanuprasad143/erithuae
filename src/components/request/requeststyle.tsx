@@ -31,7 +31,7 @@ const RequestCallStyle1 = () => {
         <div className="container " style={{ position: "relative", zIndex: 2  }}>
           <div className="row align-center">
             <div className="col-lg-6">
-              <h2 className="title">
+              <h2 className="title" style={{fontSize:"25px"}}>
                 Looking for precision-engineered solutions and services?
                 {/* <br />
                 services designed with exceptional precision? */}
@@ -39,7 +39,7 @@ const RequestCallStyle1 = () => {
               <Link
                 className="btn rectangle btn-light mt-30 mt-md-15 mt-xs-10 btn-md radius animation custom-hover-border"
                 href="/contact"
-                style={{ borderRadius: "10px",marginLeft:"10px" }}
+                style={{ borderRadius: "10px",marginLeft:"10px",fontSize:"13px" }}
               >
                 Request a Call back
               </Link>

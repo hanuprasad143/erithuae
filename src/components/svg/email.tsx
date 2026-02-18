@@ -72,18 +72,41 @@ export function EmailTwo() {
 
 export function EmailThree() {
   return (
-    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2.6 1H15.4C16.28 1 17 1.72 17 2.6V12.2C17 13.08 16.28 13.8 15.4 13.8H2.6C1.72 13.8 1 13.08 1 12.2V2.6C1 1.72 1.72 1 2.6 1Z" stroke="#57595F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M17 2.6001L9 8.2001L1 2.6001" stroke="#57595F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      width="18"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="#fecb00"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4ZM4 6V7.23607L12 13L20 7.23607V6H4Z" />
     </svg>
-  )
+  );
 }
 
 export function EmailFour() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
-      <path d="M2.2 1H11.8C12.46 1 13 1.54 13 2.2V9.4C13 10.06 12.46 10.6 11.8 10.6H2.2C1.54 10.6 1 10.06 1 9.4V2.2C1 1.54 1.54 1 2.2 1Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M13 2.19995L7 6.39995L1 2.19995" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="12"
+      viewBox="0 0 14 12"
+      fill="none"
+    >
+      <path
+        d="M2.2 1H11.8C12.46 1 13 1.54 13 2.2V9.4C13 10.06 12.46 10.6 11.8 10.6H2.2C1.54 10.6 1 10.06 1 9.4V2.2C1 1.54 1.54 1 2.2 1Z"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13 2.19995L7 6.39995L1 2.19995"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-  )
+  );
 }

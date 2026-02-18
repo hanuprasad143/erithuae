@@ -171,7 +171,7 @@ function MediaBox({ item }: { item: MediaItem }) {
       </div> */}
 
       <div className="image-overlay">
-        <h4>{item.title}</h4>
+        <h4 style={{ fontFamily: "18px" }}>{item.title}</h4>
         <p>{item.title}</p>
       </div>
     </div>

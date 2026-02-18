@@ -17,12 +17,16 @@ const SingleServices1: React.FC<SingleServices1Props> = ({ data }) => {
 
   return (
     <div className="services-style-one">
-      <i className={icon} style={{ color: "#f4d100" }}></i>
+      <i className={icon} style={{ color: "#fecb00" }}></i>
       <h4>
         {/* <Link href={`/services-details/${id}`}>{title}</Link> */}
-        <Link href="#">{title}</Link>
+        <Link href="#" style={{ fontSize: "18px" }}>
+          {title}
+        </Link>
       </h4>
-      <p style={{color:"#292929", lineHeight:"1.3"}}>{text}</p>
+      <p style={{ color: "#292929", lineHeight: "1.3", fontSize: "15px" }}>
+        {text}
+      </p>
     </div>
   );
 };

@@ -55,10 +55,10 @@ export default function ContactForm() {
       style={{ maxWidth: "1200px" }}
     >
       {/* Heading */}
-      <h4 className="mb-2" style={{ color: "#1d3a72" }}>
+      <h4 className="mb-2" style={{ color: "#292929",fontSize:"18px" }}>
         Learn More
       </h4>
-      <h1 className="mb-4" style={{ fontSize: "55px", color: "#555" }}>
+      <h1 className="mb-4" style={{ fontSize: "60px", color: "#1d3a72" }}>
         Submit an Inquiry
       </h1>
 
@@ -308,6 +308,7 @@ export default function ContactForm() {
                 borderRadius: "10px",
                 height: "50px",
                 marginBottom: "5px",
+                fontSize:"13px"
               }}
             >
               Send Message
@@ -344,7 +345,7 @@ export default function ContactForm() {
           left: 12px;
           top: 50%;
           transform: translateY(-50%);
-          color: #888;
+          color: #fecb00;
           pointer-events: none;
         }
 

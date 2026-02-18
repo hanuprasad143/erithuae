@@ -39,10 +39,11 @@ export default function BreadcrumbTwo() {
               <div className="tp-shop-banner-content">
                 <h4
                   style={{
-                    color: "#000",
+                    color: "#292929",
                     fontWeight: "bold",
                     marginTop: "10px",
                     paddingTop: "30px",
+                    fontSize: "25px",
                   }}
                 >
                   Bidirectional Knife Gate Valve
@@ -51,7 +52,7 @@ export default function BreadcrumbTwo() {
                 <h3
                   style={{
                     color: "#fecb00",
-                    fontSize: "58px",
+                    fontSize: "60px",
                     fontWeight: "bold",
                   }}
                   className="tp-shop-banner-title"
@@ -73,10 +74,11 @@ export default function BreadcrumbTwo() {
                       padding: "8px 18px",
                       borderRadius: "10px",
                       textDecoration: "none",
-                      fontWeight: "600",
+                      // fontWeight: "600",
                       display: "inline-block",
-                      marginTop: "30px",
-                      // marginBottom: "80px",
+                      marginTop: "20px",
+                      marginBottom: "20px",
+                      fontSize: "13px",
                     }}
                   >
                     Request Quote

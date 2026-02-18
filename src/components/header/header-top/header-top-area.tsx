@@ -15,19 +15,20 @@ export default function HeaderTopArea() {
         <div className="row">
           <div className="col-lg-6">
             <div className="tp-heder-info d-flex justify-content-center justify-content-lg-start align-items-center ">
-              <div className="tp-header-info-item d-none d-md-block">
+              {/* <div className="tp-header-info-item d-none d-md-block"> */}
+              <div className="tp-header-info-item">
                 <Link href="/about">
-                  <span style={{ color: "#000" }}>About</span>
+                  <span style={{ color: "#292929" }}>About</span>
                 </Link>
               </div>
               <div className="tp-header-info-item">
                 <Link href="/contact">
-                  <span style={{ color: "#000" }}>Contact Us</span>
+                  <span style={{ color: "#292929" }}>Contact Us</span>
                 </Link>
               </div>
               <div className="tp-header-info-item">
                 <Link href="#">
-                  <span style={{ color: "#000" }}>Careers</span>
+                  <span style={{ color: "#292929" }}>Careers</span>
                 </Link>
               </div>
             </div>
@@ -36,25 +37,25 @@ export default function HeaderTopArea() {
             <div className="tp-heder-info d-flex justify-content-center justify-content-lg-end align-items-center ms-lg-5">
               <div className="tp-header-info-item d-none d-md-block">
                 <Link href="/about">
-                  <span style={{ color: "#000" }}>Near By Locations</span>
+                  <span style={{ color: "#292929" }}>Near By Locations</span>
                 </Link>
               </div>
               <div className="tp-header-info-item">
                 <Link href="https://ae.linkedin.com/company/erith-global">
                   <FaLinkedin />
-                  <span style={{ color: "#000" }}>LinkedIn</span>
+                  <span style={{ color: "#292929" }}>LinkedIn</span>
                 </Link>
               </div>
               <div className="tp-header-info-item">
                 <Link href="https://www.instagram.com/erithgroup/">
                   <FaInstagram />
-                  <span style={{ color: "#000" }}>Instagram</span>
+                  <span style={{ color: "#292929" }}>Instagram</span>
                 </Link>
               </div>
               <div className="tp-header-info-item">
                 <Link href="https://www.youtube.com/@erithme2020">
                   <FaYoutube />
-                  <span style={{ color: "#000" }}>Youtube</span>
+                  <span style={{ color: "#292929" }}>Youtube</span>
                 </Link>
               </div>
             </div>

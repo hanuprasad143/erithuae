@@ -3,7 +3,7 @@ import Image from "next/image";
 // import shape_1 from "@/assets/img/campus/campuses-shape-1.jpg";
 // import shape_2 from "@/assets/img/campus/campuses-shape-2.jpg";
 import Link from "next/link";
-import { RightSmArrowThree } from "../svg";
+// import { RightSmArrowThree } from "../svg";
 
 // const results = [
 //   {
@@ -161,17 +161,17 @@ export default function ErithProducts() {
             style={{
               color: "#fecb00",
               marginBottom: "20px",
-
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              fontSize: "25px",
             }}
           >
             Explore More Erith Insights
           </h5>
           <p
             style={{
-              color: "#000",
+              color: "#292929",
               marginBottom: "20px",
               display: "flex",
               justifyContent: "center",
@@ -185,32 +185,35 @@ export default function ErithProducts() {
             {/* Right content */}
             <div className="col-lg-6">
               <div className="tp-about-campus-info-content">
-                <h4 className="" style={{ color: "#1d3a72", fontSize: "36px" }}>
+                <h4 className="" style={{ color: "#292929", fontSize: "25px" }}>
                   Dependable Valve Solutions for Power Plants by Erith
                 </h4>
-                <h4
+                <h3
                   style={{
-                    fontSize: "30px",
+                    fontSize: "60px",
                     marginBottom: "20px",
                     marginTop: "50px",
+                    color: "#1d3a72",
                   }}
                 >
                   Power Industry
-                </h4>
+                </h3>
                 <p style={{ marginBottom: "80px" }}>
                   Erith provides reliable valves and actuators for power
                   generation plants, ensuring uptime.
                 </p>
 
                 <div className="col-12">
-                  <div className="tp-program-all text-start">
+                  <div className="text-start">
                     <p>
                       {/* Explore the most appropriate promgram.​​ */}
-                      <Link href="#">
-                        Explore Our Power Valve Solutions{" "}
-                        <span>
-                          <RightSmArrowThree />
-                        </span>
+                      <Link
+                        className="event-read-more text-decoration-none"
+                        href="#"
+                        style={{ fontSize: "15px" }}
+                      >
+                        Explore Our Power Valve Solutions →{" "}
+                        <span>{/* <RightSmArrowThree /> */}</span>
                       </Link>
                     </p>
                   </div>

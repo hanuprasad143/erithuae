@@ -97,7 +97,7 @@ export default function ServiceFour() {
                     <h5
                       style={{
                         color: "#000",
-                        fontSize: "16px",
+                        fontSize: "15px",
                         fontWeight: "600",
                         marginBottom: "6px",
                       }}
@@ -107,7 +107,7 @@ export default function ServiceFour() {
                     <p
                       style={{
                         color: "#333",
-                        fontSize: "14px",
+                        fontSize: "13px",
                         marginBottom: "0",
                         lineHeight: "1.5",
                         display: "-webkit-box",
@@ -129,7 +129,7 @@ export default function ServiceFour() {
                       border: "none",
                       borderRadius: "10px",
                       padding: "8px 18px",
-                      fontSize: "14px",
+                      fontSize: "13px",
                       fontWeight: "600",
                       cursor: "pointer",
                       marginLeft: "50px",

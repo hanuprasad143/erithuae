@@ -9,7 +9,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <MainProvider>
       {/* header area start */}
-      <HeaderSeven inner={true} transparent={true} />
+      <HeaderSeven />
+      {/* <HeaderSeven inner={true} transparent={true} /> */}
+
       {/* header area end */}
 
       {/* main content */}
@@ -21,7 +23,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* footer area end */}
 
       {/* back to top */}
-      <BackToTop/>
+      <BackToTop />
       {/* back to top */}
     </MainProvider>
   );

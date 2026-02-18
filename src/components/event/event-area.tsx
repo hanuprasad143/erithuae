@@ -22,7 +22,7 @@ export default function EventArea() {
               data-wow-delay=".2s"
             >
               <div className="tp-section">
-                <h3 className="tp-section-2-title">
+                <h3 className="tp-section-2-title" >
                   Our Products{" "}
                   {/* <span>
                     Products{" "}
@@ -44,7 +44,7 @@ export default function EventArea() {
               <Link
                 className="tp-btn "
                 href="/allproducts"
-                style={{ borderRadius: "10px", padding: "8px 18px" }}
+                style={{ borderRadius: "10px", padding: "8px 18px",fontSize:"13px" }}
               >
                 See More Products
                 <span>
@@ -80,7 +80,7 @@ export default function EventArea() {
                 {/* Content Column */}
                 <div className="col-md-9">
                   <div className="tp-event-content">
-                    <h3 className="tp-event-title">
+                    <h3 className="tp-event-title" style={{fontSize:"25px"}}>
                       <HoverImgItem title={item.title} />
                     </h3>
                     <div className="tp-event-info">

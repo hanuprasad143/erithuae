@@ -19,8 +19,12 @@ const ServicesStyle1 = () => {
           <div className="row align-center">
             <div className="col-lg-5 mb-md-60">
               <div className="service-nav-info">
-                <h4 className="sub-title">What we do</h4>
-                <h2 style={{color:"#292929"}}>Excellent service and support for you</h2>
+                <h4 className="h4 sub-heading" style={{ fontSize: "18px" }}>
+                  What we do
+                </h4>
+                <h2 style={{ color: "#292929", fontSize: "25px" }}>
+                  Excellent service and support for you
+                </h2>
                 <div
                   className="nav nav-tabs service-tab-navs"
                   id="nav-tab"
@@ -81,7 +85,7 @@ const ServicesStyle1 = () => {
                     aria-labelledby={service.ariaLabelled}
                     key={service.id}
                   >
-                    <div className="row" style={{textAlign:"left"}}>
+                    <div className="row" style={{ textAlign: "left" }}>
                       {service.tabData.map((data) => (
                         <div
                           className="col-lg-6 col-md-6 mt-30 mt-md-20 mt-xs-20"

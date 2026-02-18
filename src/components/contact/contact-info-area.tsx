@@ -35,7 +35,10 @@ export default function ContactInfoArea() {
           <div className="row justify-content-start">
             <div className="col-lg-12">
               <div className="tp-contact-info-wrapper text-center">
-                <h3 className="tp-contact-main-title">
+                <h3
+                  className="tp-contact-main-title"
+                  style={{ fontSize: "25px" }}
+                >
                   Let us know how we can help
                 </h3>
               </div>
@@ -46,9 +49,16 @@ export default function ContactInfoArea() {
                       <div className="tp-contact-info-icon">
                         <span>{item.icon}</span>
                       </div>
-                      <h4 className="tp-contact-info-title">{item.title}</h4>
+                      <h4
+                        className="tp-contact-info-title"
+                        style={{ fontSize: "18px", color: "#292929" }}
+                      >
+                        {item.title}
+                      </h4>
                       <p>{item.description}</p>
-                      <a href={item.href}>{item.linkText}</a>
+                      <a href={item.href} style={{ fontSize: "18px" }}>
+                        {item.linkText}
+                      </a>
                     </div>
                   </div>
                 ))}

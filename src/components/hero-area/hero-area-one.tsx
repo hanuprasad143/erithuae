@@ -12,7 +12,7 @@ const heroSliderData = [
     id: 1,
     subtitle: "Be a part of our journey",
     title: "Precision-Crafted Engineering Solutions and Services",
-    video: "/assets/videos/erith-video.mp4",
+    video: "/assets/videos/erith_company.mp4",
   },
   {
     id: 2,

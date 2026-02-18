@@ -4,7 +4,7 @@ import Image from "next/image";
 import { event_data } from "@/data/event-data";
 import usePagination from "@/hooks/use-pagination";
 // import Pagination from "../ui/pagination";
-// import Link from "next/link";
+import Link from "next/link";
 // import { kids_event_data } from "@/data/event-data";
 // import location_svg from "@/assets/img/icon/location.svg";
 // import { RightArrow } from "../svg";
@@ -52,7 +52,7 @@ export default function AllProjects() {
               </div>
             </div>
             {currentItems.map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-6">
+              <div key={item.id} className="col-lg-4 col-md-6 d-flex mb-4">
                 <div className="tp-event-inner-item mb-30">
                   <div className="tp-event-inner-thumb">
                     {/* <Link> */}
@@ -83,7 +83,7 @@ export default function AllProjects() {
                         href={`/event-details/${item.id}`}
                         className="event-read-more text-decoration-none d-inline-flex align-items-center"
                       > */}
-                      {item.linkText} →{/* </Link> */}
+                      <Link href={""}>{item.linkText} →</Link>
                     </div>
                   </div>
                 </div>

@@ -101,9 +101,9 @@ export default function ProgramSlider() {
               ></p> */}
 
               <div className="tp-shop-product-content">
-                <span className="product-category">
-                  {item.description?.length > 22
-                    ? item.description.slice(0, 22) + "..."
+                <span className="product-category" style={{ fontSize: "15px" }}>
+                  {item.description?.length > 18
+                    ? item.description.slice(0, 18) + "..."
                     : item.description}
                 </span>
               </div>
@@ -112,9 +112,10 @@ export default function ProgramSlider() {
                 href="#"
                 className="product-title"
                 style={{
-                  display: "block", // 👈 important
+                  display: "block",
                   textAlign: "center",
-                  color: "#fecb00",
+                  color: "#292929",
+                  fontSize: "15px",
                 }}
               >
                 {item.serialno}
@@ -122,7 +123,7 @@ export default function ProgramSlider() {
             </div>
 
             {/* Actions (hidden initially) */}
-            <div className="program-actions">
+            <div className="program-actions" style={{ gap: "3px" }}>
               <Link href="../contact" className="program-btn inquire-btn">
                 Inquire
               </Link>

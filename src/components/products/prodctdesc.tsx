@@ -154,7 +154,6 @@ export default function ProductDesc() {
                           borderRadius: "10px", // 👈 decreased radius
                           transition: "all 0.2s ease",
                           marginRight: "10px",
-                             
                         }}
                         type="button"
                       >
@@ -179,27 +178,35 @@ export default function ProductDesc() {
                     style={{ marginBottom: "40px" }}
                   >
                     <div className="col-lg-6 col-md-12">
-                      <div className="tp-campus-student-heading">
+                      <div className="tp-about-campus-info-content">
                         <h5
                           style={{
-                            color: "#1d3a72",
+                            color: "#292929",
                             marginBottom: "30px",
-                            fontSize: "38px",
+                            fontSize: "25px",
                             lineHeight: "1.2",
                           }}
                         >
                           Corrosion-Resistant Materials for Versatile Industrial
                           Use
                         </h5>
-                        <p style={{ fontSize: "28px", color: "#000" }}>
+                        <p
+                          style={{
+                            fontSize: "18px",
+                            color: "#292929",
+                            fontWeight: "bold",
+                          }}
+                        >
                           Engineered Durability for Corrosive Industrial
                           Applications
                         </p>
+
                         <p
+                          className="mb-4"
                           style={{
+                            lineHeight: 1.3,
+                            color: "#292929",
                             fontSize: "15px",
-                            color: "#000",
-                            lineHeight: "1.2",
                           }}
                         >
                           The Bray Series 755 Bidirectional Knife Gate Valve is
@@ -227,6 +234,14 @@ export default function ProductDesc() {
                           liner, enhancing performance and providing a
                           cost-effective solution for abrasive applications.
                         </p>
+
+                        <p
+                          style={{
+                            // fontSize: "15px",
+                            color: "#292929",
+                            lineHeight: "1.3",
+                          }}
+                        ></p>
                       </div>
                     </div>
 
@@ -255,11 +270,11 @@ export default function ProductDesc() {
                   >
                     <h5
                       style={{
-                        color: "#1d3a72",
+                        color: "#292929",
                         marginTop: "0",
                         marginBottom: "30px", // 🔥 no gap below heading
                         lineHeight: "1.2",
-                        fontSize: "38px",
+                        fontSize: "25px",
                       }}
                     >
                       Specifications

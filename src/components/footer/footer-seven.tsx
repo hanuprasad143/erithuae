@@ -51,7 +51,7 @@ export default function FooterSeven({
         }
 
         .tp-footer-widget-title {
-          color: #000000 !important;
+          color: #292929 !important;
         }
 
         .tp-footer-copyright span {
@@ -71,7 +71,7 @@ export default function FooterSeven({
         .tp-footer-contact > a:hover,
         .tp-footer-contact-mail a:hover,
         .tp-footer-copyright a:hover {
-          color: #1d3a72 !important;
+          color: #fecb00 !important;
         }
 
         /* Divider hover (NO layout/style change) */
@@ -116,6 +116,11 @@ export default function FooterSeven({
           border-top: none !important;
           border-bottom: none !important;
           box-shadow: none !important;
+
+          .noto-products-list,
+  .noto-products-list li,
+  .noto-products-list li a {
+    font-family: 'Noto Sans', sans-serif !important;
         }
       `}</style>
 
@@ -155,7 +160,7 @@ export default function FooterSeven({
                     </Link>
                   </div>
                   <div className="tp-footer-widget-content">
-                    <p className="tp-footer-widget-title">
+                    <p className="noto-products-list" >
                       Solutions for a Sustainable Future.
                     </p>
                   </div>
@@ -165,7 +170,7 @@ export default function FooterSeven({
                     <br />
                     <a href="tel:97172662628">+971 7266 2628</a>
                   </div>
-                  <div className="tp-footer-contact-mail">
+                  <div className="tp-footer-contact-mail noto-products-list">
                     <a href="mailto:info@erithglobal.com">
                       <span>
                         <Email />
@@ -186,9 +191,23 @@ export default function FooterSeven({
                     style_2 ? "tp-footer-5-col-2" : "tp-footer-col-2"
                   } mb-30`}
                 >
-                  <h4 className="tp-footer-widget-title mb-20">Products</h4>
-                  <div className="tp-footer-widget-link">
+                  <h4
+                    className=" mb-20 noto-products-list"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Products
+                  </h4>
+                  {/* <div className="tp-footer-widget-link">
                     <ul>
+                      {footerLinks.products.map((link) => (
+                        <li key={link.id}>
+                          <Link href={link.link}>{link.title}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div> */}
+                  <div className="tp-footer-widget-link">
+                    <ul className="noto-products-list">
                       {footerLinks.products.map((link) => (
                         <li key={link.id}>
                           <Link href={link.link}>{link.title}</Link>
@@ -202,9 +221,14 @@ export default function FooterSeven({
               {/* Column 3 */}
               <div className="col-xl-2 col-lg-3 col-md-5 col-sm-5">
                 <div className="tp-footer-widget tp-footer-col-3 mb-30">
-                  <h4 className="tp-footer-widget-title mb-15">Industry</h4>
+                  <h4
+                    className=" mb-15 noto-products-list"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Industry
+                  </h4>
                   <div className="tp-footer-widget-link">
-                    <ul>
+                    <ul className="noto-products-list">
                       <li>
                         <a href="#">Oil and Gas</a>
                       </li>
@@ -231,9 +255,14 @@ export default function FooterSeven({
               {/* Column 4 (last column, no border) */}
               <div className="col-xl-4 col-lg-3 col-md-7 col-sm-7">
                 <div className="tp-footer-widget tp-footer-col-3 mb-30">
-                  <h4 className="tp-footer-widget-title mb-15">Address</h4>
+                  <h4
+                    className="mb-15 noto-products-list"
+                    style={{ fontSize: "18px" }}
+                  >
+                    Address
+                  </h4>
                   <div className="tp-footer-widget-link">
-                    <ul>
+                    <ul className="noto-products-list">
                       <li>
                         <a href="#">
                           Office No.3, Plot #84 Mussafah M40, Abu Dhabi
@@ -249,11 +278,14 @@ export default function FooterSeven({
                   </div>
                 </div>
                 <div className="p-footer-widget tp-footer-5-col-4 mb-30">
-                  <h4 className="tp-footer-widget-title mb-15">
+                  <h4
+                    className="mb-15 noto-products-list"
+                    style={{ fontSize: "18px" }}
+                  >
                     Our Newsletter
                   </h4>
                   <div className="tp-footer-newsletter-wrap">
-                    <p>
+                    <p className="noto-products-list">
                       Enter your email and we will send you <br /> more
                       information
                     </p>
@@ -326,7 +358,7 @@ export default function FooterSeven({
                 </div>
               </div>
               <div className="col-lg-4">
-                <div className="tp-footer-copyright text-center">
+                <div className="tp-footer-copyright text-end">
                   <span>
                     <a href="#">Privacy Policy</a>
                   </span>

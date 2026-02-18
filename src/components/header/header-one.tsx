@@ -7,7 +7,7 @@ import NavMenus from "./navbar/nav-menus";
 import HeaderTopArea from "./header-top/header-top-area";
 import logo_black from "@/assets/img/logo/erith_global.png";
 import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper";
-import SearchButton from "./button/search-button";
+// import SearchButton from "./button/search-button";
 import OffcanvasButton from "./button/offcanvas-btn";
 
 export default function HeaderOne() {
@@ -39,23 +39,60 @@ export default function HeaderOne() {
                   </Link>
                 </div>
               </div>
-              <div className="col-xxl-8 col-xl-7 d-none d-xl-block">
-                <div className="main-menu" style={{ marginLeft: "-20px" }}>
+              <div className="col-xxl-8 col-xl-7 d-none d-xl-block ml-3">
+                <div className="d-flex align-items-center">
                   {/* nav menus start */}
-                  <NavMenus />
+                  <div className="main-menu" style={{ marginLeft: "-20px" }}>
+                    <NavMenus />
+                  </div>
                   {/* nav menus end */}
+
+                  {/* Search bar - placed after nav inside wider column */}
+                  <div
+                    style={{
+                      backgroundColor: "#f5f5f5",
+                      borderRadius: "10px",
+                      // padding: "2px 12px",
+                      // gap: "3px",
+                      paddingLeft: "15px",
+                      width: "300px",
+                      border: "1px solid #e0e0e0",
+                      display: "flex",
+                      alignItems: "center",
+                      marginLeft: "10px",
+                      flexShrink: 0,
+                      height: "43px",
+                    }}
+                  >
+                    <span style={{ fontSize: "13px", display: "flex" }}>
+                      <SearchSvg />
+                    </span>
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      style={{
+                        border: "none",
+                        background: "transparent",
+                        outline: "none",
+                        fontSize: "13px",
+                        color: "#333",
+                        width: "100%",
+                        minWidth: 0,
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
 
               <div className="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-contact d-flex align-items-center justify-content-end">
                   {/* Search bar */}
-                  <div className=" mr-3">
+                  {/* <div className=" mr-3">
                     <SearchButton icon={<SearchSvg />} />
-                  </div>
+                  </div> */}
 
                   {/* Contact Us button */}
-                  <div className="tp-header-btn d-none d-md-block ml-25">
+                  <div className="tp-header-btn d-none d-md-block ">
                     <Link
                       href="/contact"
                       style={{

@@ -17,11 +17,12 @@ import usePagination from "@/hooks/use-pagination";
 import successstories from "@/data/knowledge-center-data";
 import KnowledgeFilterSidebar from "@/app/(shop)/shop-grid/_components/knowledgecenterfilter/knowledge-filter-sidebar";
 // import ShopFilterSidebar from "@/app/(shop)/shop-grid/_components/filter/shop-filter-sidebar";
+import { FaSearch } from "react-icons/fa";
 
 type IProps = {
   title?: string;
   subtitle?: string;
-  admission?: boolean;
+  // admission?: boolean;
   showVerticalLine?: boolean;
   showHorizontalLine?: boolean;
 };
@@ -50,7 +51,7 @@ const navData = [
 export default function KnowledgeCenterBanner({
   title = "Hello, how can we help?",
   subtitle = "Learn more about how Erith can transform and help your company.",
-  admission,
+  // admission,
   showVerticalLine = false,
   showHorizontalLine = false,
 }: IProps) {
@@ -106,76 +107,96 @@ export default function KnowledgeCenterBanner({
     <>
       {/* HERO SECTION */}
       <section
-        className="tp-breadcrumb__area pt-110 pb-150 p-relative z-index-1 fix"
+        className="tp-breadcrumb__area pt-100 pb-50 p-relative z-index-1 fix"
         style={{ height: "400px" }}
       >
+        {/* Background Image */}
         <div
           className="tp-breadcrumb__bg overlay"
           style={{ backgroundImage: "url(/assets/img/live/ABOUT-ERITH.jpg)" }}
-        />
+        ></div>
 
+        {/* Content Section */}
         <div className="container">
-          <div className="tp-breadcrumb__content text-center">
-            <h2
-              className="tp-breadcrumb__title color mb-10"
-              style={{ fontSize: 25 }}
-            >
-              {title}
-            </h2>
-            <p style={{ fontSize: 14, color: "white" }}>{subtitle}</p>
-            <div
-              className="tp-leadership-search p-relative"
-              style={{ height: "5px", marginBottom: "50px" }}
-            >
-              <div className="tp-header-2-search align-text">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  style={{
-                    width: "700px",
-                    height: "15px", // ↓ decrease height
-                    padding: "1px 10px", // ↓ smaller padding
-                    fontSize: "12px", // ↓ optional: smaller text
-                    lineHeight: "0.8", // keeps text vertically centered
-                  }}
-                />
-                <div
-                  style={{
-                    color: "white",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                    flexWrap: "wrap",
-                  }}
-                ></div>
+          <div className="row align-items-center">
+            <div className="col-sm-12">
+              <div className="tp-breadcrumb__content text-center">
+                <div className="tp-breadcrumb__list inner-after">
+                  <h2
+                    className="tp-breadcrumb__title color mb-10"
+                    style={{ fontSize: "35px", lineHeight: "1.2",fontWeight:"5px" }}
+                  >
+                    {title}
+                  </h2>
+
+                  <p style={{ fontSize: "15px", color: "white" }}>{subtitle}</p>
+
+                  <div
+                    className="tp-leadership-search p-relative"
+                    style={{
+                      position: "relative",
+                      width: "700px",
+                      margin: "0 auto",
+                    }}
+                  >
+                    <div style={{ position: "relative" }}>
+                      {/* Search Icon */}
+                      <FaSearch
+                        style={{
+                          position: "absolute",
+                          left: "15px",
+                          top: "50%",
+                          transform: "translateY(-50%)",
+                          color: "#888",
+                          fontSize: "16px",
+                          pointerEvents: "none", // 👈 prevents blocking typing
+                        }}
+                      />
+
+                      {/* Input */}
+                      <input
+                        type="text"
+                        placeholder="Search..."
+                        style={{
+                          width: "100%",
+                          height: "45px",
+                          paddingLeft: "45px", // 👈 space for icon
+                          paddingRight: "15px",
+                          borderRadius: "6px",
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  {/* {admission && (
+                    <div className="mt-10">
+                      <span className="white fw-bold">Admission</span>
+                    </div>
+                  )} */}
+                </div>
               </div>
             </div>
-
-            {admission && (
-              <div className="mt-10">
-                <span className="white fw-bold">Admission</span>
-              </div>
-            )}
           </div>
         </div>
-        <div className="tp-campus-student-list d-flex justify-content-center ">
-          <div className="d-flex align-items-center gap-1 flex-wrap  mt-20">
+        <div className="tp-campus-student-list d-flex justify-content-center  mt-5">
+          <div className="d-flex align-items-center gap-1 flex-wrap">
             <p
               style={{
-                fontSize: "12px",
+                fontSize: "18px",
                 margin: 0,
                 color: "white",
+                marginRight: "5px",
               }}
             >
               Featured Topics:
             </p>
 
-            <ul className="nav nav-tabs" id="myTab" role="tablist">
-              {navData.map((nav) => (
-                <li key={nav.id} className="nav-item" role="presentation">
-                  {/* <button
+            {/* <ul className="nav nav-tabs" id="myTab" role="tablist"> */}
+            {navData.map((nav) => (
+              <li key={nav.id} className="nav-item" role="presentation">
+                {/* <button
                     className={`nav-link ${nav.isActive ? "active" : ""}`}
-                    style={{ fontSize: "9px", color: "white", height: "30px" }}
+                    style={{ fontSize: "12px", color: "white" }}
                     id={`${nav.id}-tab`}
                     data-bs-toggle="tab"
                     data-bs-target={`#${nav.id}`}
@@ -187,24 +208,24 @@ export default function KnowledgeCenterBanner({
                   >
                     {nav.title}
                   </button> */}
-                  <Link
-                    className="btn rectangle btn-light  mt-xs-10 btn-md radius animation"
-                    href="/contact"
-                    style={{
-                      // padding: "8px",
-                      fontSize: "12px",
-                      // fontWeight: "400",
-                      padding: "4px 14px",
-                      borderRadius: "10px",
-                      marginRight: "12px",
-                      marginLeft: "0px",
-                    }}
-                  >
-                    {nav.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                <Link
+                  className="btn rectangle btn-light  mt-xs-10 btn-sm radius animation"
+                  href="/contact"
+                  style={{
+                    // padding: "8px",
+                    fontSize: "10px",
+                    // fontWeight: "400",
+                    padding: "4px 14px",
+                    borderRadius: "10px",
+                    marginRight: "6px",
+                    marginLeft: "0px",
+                  }}
+                >
+                  {nav.title}
+                </Link>
+              </li>
+            ))}
+            {/* </ul> */}
           </div>
         </div>
       </section>
@@ -485,7 +506,7 @@ export default function KnowledgeCenterBanner({
                                 color: "white",
                                 padding: "4px 14px",
                                 borderRadius: "10px",
-                                fontSize: "12px",
+                                fontSize: "13px",
                                 fontWeight: "600",
                                 display: "inline-flex",
                                 alignItems: "center",
@@ -495,14 +516,19 @@ export default function KnowledgeCenterBanner({
                               {/* {renderIcon(story.icon)} */}
                               {story.category}
                             </span>
-
                             <h3
                               style={{
                                 color: "white",
-                                fontSize: "18px",
+                                fontSize: "15px",
                                 fontWeight: "400",
                                 lineHeight: "1.2",
                                 marginTop: "12px",
+
+                                display: "-webkit-box",
+                                WebkitLineClamp: 2,
+                                WebkitBoxOrient: "vertical",
+                                overflow: "hidden",
+                                textOverflow: "ellipsis",
                               }}
                             >
                               {story.title}
@@ -525,11 +551,11 @@ export default function KnowledgeCenterBanner({
                               Learn More
                             </button> */}
                             <Link
-                              className="btn rectangle btn-light  mt-xs-10 btn-md radius animation"
+                              className="btn rectangle btn-light  mt-xs-10 btn-sm radius animation"
                               href="#"
                               style={{
                                 // padding: "8px",
-                                fontSize: "14px",
+                                fontSize: "13px",
                                 fontWeight: "600",
                                 padding: "4px 14px",
                                 borderRadius: "10px",
@@ -544,9 +570,10 @@ export default function KnowledgeCenterBanner({
                   ))}
                 </div>
               </div>
+              
 
               {/* Heading */}
-              <h1 style={{ fontSize: "14px" }}>
+              <h1 style={{ fontSize: "15px" }}>
                 {selectedCategory
                   ? `All ${selectedCategory}`
                   : "All Knowledge Resources"}

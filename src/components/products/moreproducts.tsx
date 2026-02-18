@@ -2,7 +2,7 @@ import Link from "next/link";
 // import Image from "next/image";
 import ProgramSlider from "../slider/program-slider";
 // import shape_line from "@/assets/img/unlerline/program-1-svg-1.svg";
-import { RightSmArrowThree } from "../svg";
+// import { RightSmArrowThree } from "../svg";
 
 export default function Moreproducts() {
   return (
@@ -45,6 +45,7 @@ export default function Moreproducts() {
                   color: "#fecb00",
                   marginBottom: "20px",
                   marginTop: "30px",
+                  fontSize: "25px",
                 }}
               >
                 Our Portfolio
@@ -52,7 +53,7 @@ export default function Moreproducts() {
             </div>
             <p
               style={{
-                fontSize: "43px",
+                fontSize: "40px",
                 color: "#000",
                 marginBottom: "16px",
                 justifyContent: "center",
@@ -82,14 +83,12 @@ export default function Moreproducts() {
             <div className="tp-program-dot text-center"></div>
           </div>
           <div className="col-12">
-            <div className="tp-program-all text-end">
+            {/* <div className="tp-program-all text-end"> */}
+            <div className="text-end">
               <p>
                 {/* Explore the most appropriate promgram.​​ */}
-                <Link href="#">
-                  View all Products{" "}
-                  <span>
-                    <RightSmArrowThree />
-                  </span>
+                <Link className="event-read-more text-decoration-none" href="#">
+                  View all Products → <span>{/* <RightSmArrowThree /> */}</span>
                 </Link>
               </p>
             </div>

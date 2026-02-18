@@ -1,5 +1,57 @@
 import React from "react";
 
+// const counterData = [
+//   {
+//     id: 1,
+//     icon: (
+//       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+//         <path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h-8a2 2 0 0 1-2-2V4z" />
+//         <path d="M14 4v4h4" />
+//       </svg>
+//     ),
+//     title: "Resources",
+//     description:
+//       "Find information about Bray product including Sales Data Sheets, Brochures, IOM guides and more.",
+//     linkText: "Explore Now",
+//   },
+//   {
+//     id: 2,
+//     icon: (
+//       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+//         <path d="M9 21h6v-1H9v1zm3-20a7 7 0 0 0-4 12.9V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3.1A7 7 0 0 0 12 1z" />
+//       </svg>
+//     ),
+//     title: "Knowledge Center",
+//     description:
+//       "Learn about Bray's customer success stories, webinars, industry solutions, and more about Bray and our products.",
+//     linkText: "Explore Now",
+//   },
+//   {
+//     id: 3,
+//     icon: (
+//       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+//         <path d="M6 2a2 2 0 0 0-2 2v16l4-2 4 2 4-2 4 2V6l-6-4H6z" />
+//       </svg>
+//     ),
+//     title: "Materials Selection",
+//     description:
+//       "A guide to provide insights for common applications and basic material compatibility.",
+//     linkText: "Explore Now",
+//   },
+//   {
+//     id: 4,
+//     icon: (
+//       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+//         <path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+//       </svg>
+//     ),
+//     title: "Virtual Tradeshow",
+//     description:
+//       "Discover Bray innovations in a virtual trade show setting.",
+//     linkText: "Explore Now",
+//   },
+// ];
+
 const counterData = [
   {
     id: 1,
@@ -126,9 +178,9 @@ export default function CounterOne() {
                     {/* Small vertical red line */}
                     <div
                       style={{
-                        width: "6px",
+                        width: "3px",
                         height: "45px",
-                        backgroundColor: "#1d3a72",
+                        backgroundColor: "#fecb00",
                         marginRight: "12px",
                         flexShrink: 0,
                       }}
@@ -143,9 +195,9 @@ export default function CounterOne() {
                     <h3
                       className="mb-0"
                       style={{
-                        fontSize: "14px",
+                        fontSize: "15px",
                         fontWeight: "800",
-                        color: "#1f2937",
+                        color: "#292929",
                       }}
                     >
                       {item.title}
@@ -154,20 +206,21 @@ export default function CounterOne() {
                   <p
                     className="mb-2"
                     style={{
-                      fontSize: "12px",
+                      fontSize: "13px",
                       color: "#6b7280",
                       lineHeight: "1.5",
                       flex: "1",
+               
                     }}
                   >
                     {item.description}
                   </p>
                   <a
-                    href="#"
+                    href="./knowledgecenter"
                     className="text-decoration-none d-inline-flex align-items-center"
                     style={{
-                      color: "#000",
-                      fontSize: "12px",
+                      color: "#292929",
+                      fontSize: "13px",
                       fontWeight: "500",
                       marginTop: "auto",
                     }}

@@ -23,7 +23,11 @@ export default function NavMenus({ sm_mega_title }: IProps) {
           >
             <Link
               href={menu.link}
-              style={{ color: "#000", textDecoration: "none" }}
+              style={{
+                color: "#292929",
+                textDecoration: "none",
+                fontSize: "15px",
+              }}
             >
               {menu.sm_mega_menus && sm_mega_title ? sm_mega_title : menu.title}
             </Link>

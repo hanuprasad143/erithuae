@@ -31,7 +31,10 @@ const PricingPage = () => {
               className="tp-section text-start wow fadeInUp"
               data-wow-delay=".4s"
             >
-              <h5 className="tp-section-3-subtitle">
+              <h5
+                className="tp-section-3-subtitle"
+                style={{ fontSize: "18px", color: "#292929" }}
+              >
                 Global Company, Regional Focus, Local Presence
               </h5>
               {/* <p className="tp-section-3-title">

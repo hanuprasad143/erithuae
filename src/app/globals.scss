@@ -7,4 +7,214 @@
 @import "../../public/assets/css/bhavani.css";
 @import "../../public/assets/css/flat-icon.css";
 
+.tp-service-title {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+.tp-service-title a:hover {
+  color: #fecb00;
+}
 
+p {
+  font-size: 15px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+// h3{
+//     font-size: 80px;
+// }
+
+.tp-section-2-title {
+  font-size: 60px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  font-weight: 500;
+  color: #1d3a72;
+}
+
+.tp-service-item:hover .tp-service-wrap::before {
+  top: 10px;
+  height: calc(100% - 20px);
+}
+
+.tp-service-item:hover .tp-service-icon {
+  animation: icon-bounce 0.8s 1;
+}
+
+.tp-service-item:hover .tp-service-btn {
+  transform: translateY(25px);
+}
+
+.tp-service-item:hover .tp-service-btn span::before {
+  transform: scale(1.2);
+}
+
+.tp-service-item:hover .tp-service-btn span svg {
+  transform: scale(1.1);
+}
+
+/* Icon */
+.tp-service-icon {
+  height: 68px;
+}
+
+/* Button */
+.tp-service-btn {
+  transform: translateY(35px);
+  transition: all 0.3s ease-out;
+}
+
+/* Circle Container */
+.tp-service-btn span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  height: 52px;
+  width: 52px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* 🔥 Thinner Circle Border */
+// .tp-service-btn span::before {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 50%;
+// //   border: 3px solid var(--tp-theme-primary); /* Reduced from 6px */
+//    border: 3px solid var(--tp-theme-5); /* Reduced from 6px */
+
+//   background-color: var(--tp-common-white);
+//   z-index: -1;
+//   transition: all 0.3s ease-out;
+// }
+
+.tp-service-btn span::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fecb00; /* Yellow color */
+  background-color: var(--tp-common-white);
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+/* Icon inside circle */
+.tp-service-btn span svg {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.tp-event-title {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+.tp-event-title a:hover {
+  color: #fecb00;
+}
+
+.tp-event-item:hover .tp-event-arrow a {
+  color: #fecb00;
+}
+
+/* Base */
+.tp-shop-widget .nav-link {
+  position: relative;
+  padding-left: 18px;
+  color: #292929;
+  transition: all 0.3s ease;
+}
+
+/* Dot default = grey */
+.tp-shop-widget .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ccc; /* grey */
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.tp-shop-widget .nav-link:hover {
+  color: #fecb00;
+}
+
+.tp-shop-widget .nav-link:hover::before {
+  background-color: #fecb00;
+}
+
+/* Active */
+.tp-shop-widget .nav-link.active {
+  color: #292929;
+}
+
+/* IMPORTANT: keep dot grey when active */
+.tp-shop-widget .nav-link.active::before {
+  background-color: #ccc;
+}
+
+/* benny css */
+
+// .tp-header-info-item a {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 6px;
+// }
+
+// .tp-header-info-item span {
+//   line-height: 1;
+// }
+
+// .tp-header-info-item svg {
+//   vertical-align: middle;
+// }
+
+/* close */
+
+.tp-about-campus-thumb {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.tp-about-campus-thumb img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.tp-about-campus-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay color */
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.tp-sidebar-post-item a:hover .tp-sidebar-post-title  {
+  color: #fecb00 !important;
+}
+
+.tp-sidebar-post-item a:hover .tp-sidebar-post-number  {
+  color: #fecb00 !important;
+}

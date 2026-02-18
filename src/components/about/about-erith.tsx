@@ -32,7 +32,7 @@ const AboutStyle1 = () => {
 
               <div className="owner-info">
                 <div className="left-info">
-                  <h4>Richard Edwin</h4>
+                  <h4 style={{ fontSize: "18px" }}>Richard Edwin</h4>
                   <span>CEO</span>
                 </div>
                 <Link
@@ -45,6 +45,7 @@ const AboutStyle1 = () => {
                     textDecoration: "none",
                     fontWeight: "600",
                     display: "inline-block",
+                    fontSize:"13px"
                   }}
                 >
                   Get More
